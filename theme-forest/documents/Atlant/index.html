@@ -1,0 +1,1216 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Atlant - Responsive Bootstrap Admin Template</title>
+	
+	<meta name="description" content=""/>
+	<meta name="author" content="Dmitry Ivaniuk"/>
+	<meta name="copyright" content="Dmitry Ivaniuk"/>
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter"/>
+	<meta name="date" content="2012-12-21T00:00:00+01:00"/>
+
+        
+        
+        <link rel="stylesheet" href="css/shCoreDefault.css"  media="all"/>     
+        <link rel="stylesheet" href="css/shThemeDefault.css"  media="all"/>                
+        
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	
+	<script src="js/jquery.1.6.4.js"></script>
+	        
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>	        
+        
+        <script src="js/shCore.js"></script>
+	
+	<script src="js/shBrushCss.js"></script>
+	<script src="js/shBrushXml.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+        
+
+        
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+	
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>		
+		::-moz-selection{background:#BBBBBB;color:#222222;}
+		::selection{background:#BBBBBB;color:#222222;}		
+		a{color:#335A85;}
+		hr{border-top: 1px solid #666; border-bottom:1px solid #FFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background: #33414e;color:#FFF;}
+		#documenter_sidebar ol a{border-top: 1px solid #42505e;border-bottom:1px solid #2c363f;color:#FFF; padding: 10px 10px; line-height: 20px;}
+		#documenter_sidebar ol a:hover{background: #364654;color:#FFF;border-top:1px solid #42505e;}
+		#documenter_sidebar ol a.current{background: left top repeat #2c363f;color:#FFF;border-top:1px solid #42505e;}                
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+                #documenter_copyright a{color: #fff;}
+                .abtn{display: block; float: left; padding: 10px; color: #333; border: 1px solid #CCC; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
+                    .abtn:hover{text-decoration: none; background: #F1F1F1;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>						
+			<li><a href="#html_structure">HTML structure</a></li>
+			<li><a href="#css_structure">CSS structure</a></li>
+			<li><a href="#javascript_structure">Javascript structure</a></li>                        
+			<li><a href="#how_to">How-to...?</a></li>                        
+                        <li><a href="#credits">Credits</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+		</ol>
+		<div id="documenter_copyright">Copyright Dmitry Ivaniuk 2015<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+            <h1>Atlant - Responsive Bootstrap Admin Template</h1><hr><ul><li>Created: 15/10/2014</li><li>Latest Update: 27/01/2015</li><li>By: Dmitry Ivaniuk</li><li>Email: <a href="mailto:aqvatarius@ukr.net">aqvatarius@ukr.net</a></li></ul>
+            <a href="#how_to" class="abtn">How to update template?</a>
+        </section>
+
+        
+<section id="html_structure">
+	<h3>HTML structure</h3><hr class="notop">
+        <h4>Structure of default document</h4>
+<pre class="brush: xml">
+
+ 
+<div class="page-container"><!-- page container -->    
+    
+    <div class="page-sidebar"><!-- page sidebar -->
+    </div><!-- ./page sidebar -->    
+    
+    <div class="page-content"><!-- page content -->        
+
+        <!-- content elements -->
+        
+    </div><!-- ./page content -->
+    
+</div><!-- ./page container -->    
+
+</pre>        
+
+<h4>Navigation structure</h4>
+        
+<pre class="brush: xml">
+
+    
+    <ul class="x-navigation"><!-- start navigation -->
+        
+        <li class="xn-logo"><!-- your logo -->
+            <a href="index.html">Your company name</a>
+            <a href="#" class="x-navigation-control"></a><!-- mobile toggle navigation button -->
+        </li><!-- ./your logo -->
+        
+        <li class="xn-title">Navigation</li><!-- Navigation title -->
+        
+        <li><!-- navigation item -->
+            <a href="index.html"><!-- navigation button -->
+                <span class="fa fa-desktop"></span><!-- navigation button icon -->
+                <span class="xn-text">Dashboard</span><!-- navigation button text -->
+            </a><!-- ./navigation button -->
+        </li><!-- ./navigation item -->
+        
+    </ul><!-- ./start navigation -->
+
+</pre>          
+
+<h4>Content structure</h4>        
+<pre class="brush: xml">
+    
+    <div class="page-content"><!-- page content -->
+        
+        <ul class="x-navigation x-navigation-horizontal x-navigation-panel"><!-- horizontal navigation -->
+            
+            <li class="xn-icon-button"><!-- toggle sidebar navigation -->
+                <a href="#" class="x-navigation-minimize"><span class="fa fa-dedent"></span></a><!-- toggle sidebar button -->
+            </li><!-- ./toggle sidebar navigation -->
+            
+        </ul><!-- ./horizontal navigation -->
+        
+        <ul class="breadcrumb"><!-- breadcrumb -->
+            <li><a href="#">Link</a></li><!-- link -->
+            <li class="active">Active</li><!-- active -->
+        </ul><!-- ./breadcrumb -->
+
+        <div class="page-title"><!-- page title -->
+            <h2><span class="fa fa-arrow-circle-o-left"></span> Page Title</h2>
+        </div><!-- ./page title -->
+        
+        <div class="page-content-wrap"><!-- page content wrapper -->
+
+            <!-- your content -->
+
+        </div><!-- ./page content wrapper -->
+        
+    </div><!-- ./page content -->
+
+</pre> 
+
+<h4>Navigation levels structure(Menu)</h4>
+        
+<pre class="brush: xml">
+
+    <ul class="x-navigation"><!-- start navigation -->
+        
+        <li><!-- navigation item -->
+            <a href="index.html"><!-- navigation button -->
+                <span class="fa fa-desktop"></span><!-- navigation button icon -->
+                <span class="xn-text">Dashboard</span><!-- navigation button text -->
+            </a><!-- ./navigation button -->
+            
+            <ul><!-- subnavigation block -->
+                
+                <li><!-- subnavigation item -->
+                </li><!-- ./subnavigation item -->
+                
+            </ul><!-- ./subnavigation block -->
+            
+        </li><!-- ./navigation item -->
+        
+    </ul><!-- ./start navigation -->
+
+</pre>
+
+<h4>Tile Structure</h4>
+<pre class="brush: xml">
+    <a href="#" class="tile tile-default"><!-- tile item -->
+        Text Or Icon<!-- tile content -->
+        <div class="informer informer-default"></div><!-- tile informer -->
+    </a><!-- ./tile item -->
+</pre>
+<p>Options for tile: <strong>tile-valign</strong></p>
+<p>Colors for tile: <strong>tile-default, tile-primary, tile-success, tile-info, tile-warning, tile-danger</strong></p>
+<p>Colors for informer: <strong>informer-default, informer-primary, informer-success, informer-info, informer-warning, informer-danger</strong></p>
+<p>Positions for informer: <strong>dir-tr, dir-br, dir-bl</strong>. Default is Left Top.</p>
+
+<h4>Widget Structure</h4>
+<pre class="brush: xml">
+    <div class="widget widget-primary"><!-- widget item -->
+        
+        <!-- variant #1 -->
+        <div class="widget-title">title</div><!-- widget title -->
+        <div class="widget-subtitle">subtitle</div><!-- widget subtitle -->
+        <div class="widget-int">0000</div><!-- widget int value -->
+        <!-- ./variant #1 -->
+        
+        <!-- variant #2 -->
+        <div class="widget-big-int">0000</div><!-- widget big int value -->
+        <div class="widget-subtitle">title</div><!-- widget subtitle -->
+        <!-- ./variant #2 -->
+        
+        <!-- variant #3 -->
+        <div class="widget-item-left"><!-- left side block -->
+            <span class="fa fa-user"></span>
+        </div><!-- ./left side block -->
+        <div class="widget-data"><!-- widget data block -->
+            <div class="widget-int">000</div><!-- widget int value -->
+            <div class="widget-title">title</div><!-- widget title -->
+            <div class="widget-subtitle">subtitle</div><!-- widget subtitle -->
+        </div><!-- ./widget data block -->
+        <!-- ./variant #3 -->
+        
+        <!-- variant #4 -->
+        <div class="widget-item-right"><!-- left side block -->
+            <span class="fa fa-user"></span>
+        </div><!-- ./left side block -->
+        <div class="widget-data-left"><!-- widget data block -->
+            <div class="widget-int">000</div><!-- widget int value -->
+            <div class="widget-title">title</div><!-- widget title -->
+            <div class="widget-subtitle">subtitle</div><!-- widget subtitle -->
+        </div><!-- ./widget data block -->
+        <!-- ./variant #4 -->
+        
+        <div class="widget-controls"><!-- widget controls -->
+            <a href="#" class="widget-control-left"><span class="fa fa-upload"></span></a><!-- control left -->
+            <a href="#" class="widget-control-right"><span class="fa fa-times"></span></a><!-- control right -->
+        </div><!-- /widget controls -->
+    </div><!-- ./widget item -->
+</pre>
+
+<h4>Progressbars Structure</h4>
+<p>Detailed documentation of progressbar usage you can find on bootstrap site. In this template you can see custom size: <strong>small</strong></p>
+
+<pre class="brush: xml">
+    <div class="progress progress-small"><!-- progressbar -->
+        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">75%</div>
+    </div><!-- ./progressbar -->
+</pre>
+<p>This size is integrated in lots of elements in site, such as table, panel, informers etc.</p>
+<p>Also you can use custom color: <strong>progress-bar-colorful</strong>. For each size of bootstrap progressbars.</p>
+
+<h4>Contact List Structure</h4>
+<pre class="brush: xml">
+    <div class="list-group list-group-contacts"><!-- list contacts -->                 
+        
+        <a href="#" class="list-group-item"><!-- list contacts item -->                                 
+            <div class="list-group-status status-online"></div><!-- item status -->
+            &lt;img src="image" class="pull-left" alt="alt"/><!-- item image -->
+            <span class="contacts-title">title</span><!-- item title -->
+            <p>text</p><!-- item title -->   
+            <div class="list-group-controls"><!-- item controls -->
+                buttons
+            </div><!-- ./item controls -->
+        </a><!-- ./list contacts item -->
+        
+    </div><!-- ./list contacts -->
+</pre>
+<p>Available statuses: <strong>status-online,status-offline,status-away</strong></p>
+
+<h4>Messages Structure</h4>
+<pre class="brush: xml">
+
+    <!-- Default -->
+    <div class="messages"><!-- list messages -->
+        
+        <div class="item"><!-- messages item -->
+            <div class="text"><!-- item text -->
+                <div class="heading"><!-- item title -->
+                    <a href="#">title</a><!-- item title text -->
+                    <span class="date">00:00</span><!-- item title date -->
+                </div><!-- ./item title -->
+                text
+            </div><!-- ./item text -->
+        </div><!-- ./messages item -->
+        
+    </div><!-- ./list messages -->
+    <!-- ./Default -->
+
+    <!-- With Images -->
+    <div class="messages messages-img"><!-- list messages -->
+        
+        <div class="item"><!-- messages item -->
+            <div class="image"><!-- item image -->
+                &lt;img src="path/to/img.jpg" alt="alt"/>
+            </div><!-- ./item image -->                   
+            <div class="text"><!-- item text -->
+                <div class="heading"><!-- item title -->
+                    <a href="#">title</a><!-- item title text -->
+                    <span class="date">00:00</span><!-- item title date -->
+                </div><!-- ./item title -->
+                text
+            </div><!-- ./item text -->            
+        </div><!-- ./list messages -->
+        
+    </div>
+    <!-- ./With Images -->
+
+</pre>
+<p>Add class <strong>in</strong> to messages item to get RTL mode(only in messages-img).</p>
+
+<h4>Tags List Structure</h4>
+<pre class="brush: xml">
+    <ul class="list-tags"><!-- tags list -->
+        
+        <li><!-- item -->
+            <a href="#"><!-- link -->
+                text
+            </a><!-- ./link -->
+        </li><!-- ./item -->        
+        
+    </ul><!-- ./tags list -->
+</pre>
+
+<h4>Gallery Structure</h4>
+<pre class="brush: xml">
+    <div class="gallery"><!-- gallery list -->
+                             
+        <a class="gallery-item" href="#"><!-- gallery item -->
+            <div class="image"><!-- item image -->
+                <img src="assets/images/gallery/nature-1.jpg" alt="Nature Image 1">                                        
+                <ul class="gallery-item-controls"><!-- item controls -->                    
+                    <li><span class="gallery-item-remove"><i class="fa fa-times"></i></span></li><!-- controls item -->
+                </ul><!-- /item controls -->                                                                    
+            </div><!-- ./item image -->
+            <div class="meta"><!-- item description -->
+                <strong>Nature image 1</strong>
+                <span>Description</span>
+            </div><!-- ./item description -->                                
+        </a><!-- ./gallery item -->
+
+    </div><!-- ./gallery list -->
+</pre>
+<p>Check pages-gallery.html to get more info how to use Blueimp Gallery plugin to preview large images.</p>
+
+
+<h4>Friend Structure</h4>
+<pre class="brush: xml">
+    <a href="#" class="friend"><!-- friend item -->
+        &lt;img src="path/to/img.jpg"><!-- item image -->
+        <span>Dmitry Ivaniuk</span><!-- item title -->
+    </a><!-- ./friend item -->
+</pre>
+<p>Image is responsive so this feature can be used with bootstrap grid to get item size.</p>
+
+<h4>User Card/Profile Sturcture</h4>
+<pre class="brush: xml">
+
+    <div class="profile"><!-- profile item -->
+        <div class="profile-image"><!-- item image -->
+            <img src="path/to/img.jpg" alt="alt"/>
+        </div><!-- ./item image -->
+        <div class="profile-data"><!-- item data -->
+            <div class="profile-data-name">Title</div><!-- item title -->
+            <div class="profile-data-title">Subtitle</div><!-- item subtitle -->
+        </div><!-- ./item data -->
+        <div class="profile-controls"><!-- item controls -->
+            <a href="#" class="profile-control-left"><span class="fa fa-info"></span></a><!-- left control -->
+            <a href="#" class="profile-control-right"><span class="fa fa-phone"></span></a><!-- right control -->
+        </div><!-- ./item controls -->
+    </div><!-- ./profile item -->
+
+</pre>
+<p>You can use bg helper classes to change background of profile block.</p>
+
+
+<h4>Timeline Structure</h4>
+<pre class="brush: xml">
+                            
+    <div class="timeline"><!-- timeline -->
+
+        <div class="timeline-item timeline-main"><!-- timeline item main -->
+            <div class="timeline-date">0000</div><!-- item main text/date -->
+        </div><!-- ./timeline item main -->
+        
+        <div class="timeline-item"><!-- timeline item -->
+            <div class="timeline-item-info">Yesterday</div><!-- item date/info -->
+            <div class="timeline-item-icon"><span class="fa fa-globe"></span></div><!-- item icon -->
+            <div class="timeline-item-content"><!-- item content -->
+                <div class="timeline-heading"><!-- item heading -->
+                    text
+                </div><!-- ./item heading -->
+                <div class="timeline-body"><!-- item body -->
+                    text                                        
+                </div><!-- ./item heading -->
+                <div class="timeline-body comments"><!-- comments -->
+                    <div class="comment-item"><!-- comment item -->
+                        &lt;img src="path/to/img.jpg"/>
+                        <p class="comment-head"></p><!-- comment head -->
+                        <!-- comment text -->                        
+                    </div><!-- ./comment item -->                        
+                    <div class="comment-write"><!-- comment write -->
+                        <textarea class="form-control" placeholder="Write a comment" rows="1"></textarea>                                                
+                    </div><!-- ./comment write -->
+                </div><!-- ./comments -->                            
+                <div class="timeline-footer"><!-- item footer -->
+                    
+                </div><!-- ./item footer -->
+            </div>
+        </div><!-- ./timeline item -->
+
+    </div>
+
+</pre>
+<p>Add class <strong>timeline-item-right</strong> to timeline-item to get item to right</p>
+
+<h4>Content Frame</h4>
+<pre class="brush: xml">
+
+    <!-- Frame with left column -->
+    <div class="content-frame"><!-- content frame -->
+        
+        <div class="content-frame-top"><!-- frame top -->
+            <div class="page-title"><!-- frame title -->
+                <h2>title</h2>
+            </div><!-- ./frame title -->                    
+            <div class="pull-right">
+                <button class="btn btn-default content-frame-left-toggle"><span class="fa fa-bars"></span></button><!-- frame title -->
+            </div>                        
+        </div><!-- ./frame top -->
+        
+        <div class="content-frame-left"><!-- frame left -->
+            
+        </div><!-- ./frame left -->
+        
+        <div class="content-frame-body"><!-- frame body -->
+        </div><!-- ./frame body -->
+        
+    </div><!-- ./content frame -->
+    <!-- ./Frame with left column -->
+    
+    <!-- Frame with right column -->
+    <div class="content-frame"><!-- content frame -->
+        
+        <div class="content-frame-top"><!-- frame top -->
+            <div class="page-title"><!-- frame title -->
+                <h2>title</h2>
+            </div><!-- ./frame title -->                    
+            <div class="pull-right">
+                <button class="btn btn-default content-frame-right-toggle"><span class="fa fa-bars"></span></button><!-- frame title -->
+            </div>                        
+        </div><!-- ./frame top -->
+        
+        <div class="content-frame-right"><!-- frame right -->
+            
+        </div><!-- ./frame right -->
+        
+        <div class="content-frame-body content-frame-body-left"><!-- frame body -->
+        </div><!-- ./frame body -->
+        
+    </div><!-- ./content frame -->
+    <!-- ./Frame with right column -->
+
+</pre>
+
+
+
+</section>
+<section id="css_structure">
+	<h3>CSS structure</h3><hr class="notop">
+        <p>In downloaded package you will find <strong>styles.less</strong>. this is the main LESS file that includes:</p>
+<pre class="brush: css">        
+    @charset "UTF-8";
+
+    @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,500,600,700&subset=latin,cyrillic-ext);
+
+    @import "jquery/jquery-ui.min.css";
+    @import "bootstrap/bootstrap.min.css";
+    @import "fontawesome/font-awesome.min.css";
+
+    @import "summernote/summernote.css";
+    @import "codemirror/codemirror.css";
+    @import "nvd3/nv.d3.css";
+    @import "mcustomscrollbar/jquery.mCustomScrollbar.css";
+    @import "fullcalendar/fullcalendar.css";
+    @import "blueimp/blueimp-gallery.min.css";
+    @import "rickshaw/rickshaw.css";
+    @import "dropzone/dropzone.css";
+
+    @import "animate/animate.min.css";
+
+    @import "theme-default.less";
+    
+    /* Lesscss code */
+</pre>        
+        <ul>
+            <li><strong>jquery/jquery-ui.min.css</strong> - jQuery UI custom stylesheets</li>
+            <li><strong>bootstrap/bootstrap.min.css</strong> - bootstrap stylesheets</li>            
+            <li><strong>fontawesome/font-awesome.min.css</strong> - font awesome icons stylesheets</li>            
+            
+            <li><strong>summernote/summernote.css</strong> - Summernote WYSIWYG editor stylesheets</li>
+            <li><strong>codemirror/codemirror.css</strong> - Codemirror stylesheets</li>
+            <li><strong>nvd3/nv.d3.css</strong> - NVD3 charts stylesheets</li>            
+            <li><strong>mcustomscrollbar/jquery.mCustomScrollbar.css</strong> - Custom scrollbar stylesheets</li>
+            
+            <li><strong>fullcalendar/fullcalendar.css</strong> - Fullcalendar plugin stylesheets</li>
+            <li><strong>blueimp/blueimp-gallery.min.css</strong> - Blueimp gallery plugin stylesheets</li>            
+            <li><strong>rickshaw/rickshaw.css</strong> - Rickshaw charts stylesheets</li>            
+            <li><strong>dropzone/dropzone.css</strong> - Dropzone plugin stylesheets</li>
+            
+            <li><strong>animate/animate.min.css</strong> - animate effects stylesheets</li>
+            <li><strong>theme-default.less</strong> - Default Theme variables</li>                                    
+        </ul>
+<p>In less/css folder of template you will find 5 custom themes for template. Each of this template can be used via including other theme variables.</p>        
+<p>Please use your own css file for your stylesheets. It's easiest way to update template in future.</p>
+        
+</section>
+        
+<section id="javascript_structure">
+	<h3>Javascript structure</h3><hr class="notop">
+
+        <h4>Basics</h4>
+        
+<pre class="brush: xml">
+<!-- START SCRIPTS -->
+    <!-- START PLUGINS -->
+    &lt;script type="text/javascript" src="js/plugins/jquery/jquery.min.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/jquery/jquery-ui.min.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/bootstrap/bootstrap.min.js">&lt;/script>        
+    <!-- END PLUGINS -->
+
+    <!-- START THIS PAGE PLUGINS-->        
+
+        <!-- CUSTOM PLUGINS GOING HERE -->
+    <script type="text/javascript" src="js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js"></script>
+    <!-- END THIS PAGE PLUGINS-->        
+
+    <!-- START TEMPLATE -->        
+    &lt;script type="text/javascript" src="js/plugins.js">&lt;/script>        
+    &lt;script type="text/javascript" src="js/actions.js">&lt;/script>
+    <!-- END TEMPLATE -->
+<!-- END SCRIPTS -->         
+</pre>        
+<p>This is main JS files that you should use in blank page.</p>        
+      
+<h4>Sparkline charts plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/sparkline/jquery.sparkline.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use sparkline charts</p>
+        
+<h4>Blueimp Gallery plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/blueimp/jquery.blueimp-gallery.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use popup preview of large image</p>        
+        
+<h4>Rickshaw plugin</h4>
+<pre class="brush: xml">                            
+        &lt;script type="text/javascript" src="js/plugins/rickshaw/d3.v3.js">&lt;/script>
+        &lt;script type="text/javascript" src="js/plugins/rickshaw/rickshaw.min.js">&lt;/script>        
+</pre>
+<p>Allows you to use Rickshaw charts</p>
+
+<h4>Knob plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/knob/jquery.knob.js'>&lt;/script>
+</pre>
+<p>Allows you to use knob circle charts</p>
+
+<h4>jVctorMap plugin</h4>
+<pre class="brush: xml">                    
+&lt;script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js'>&lt;/script>
+&lt;script type='text/javascript' src='js/plugins/jvectormap/jquery-jvectormap-europe-mill-en.js'>&lt;/script>
+</pre>
+<p>Allows you to use jvectormaps plugin</p>
+
+<h4>Notify plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/noty/jquery.noty.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/noty/layouts/topCenter.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/noty/layouts/topLeft.js'>&lt;/script>
+    &lt;script type='text/javascript' src='js/plugins/noty/layouts/topRight.js'>&lt;/script>    
+    &lt;script type='text/javascript' src='js/plugins/noty/themes/default.js'>&lt;/script>
+</pre>
+<p>Allows you to use notify massages. Also check official site of plugin to get more information about usage(direction etc.)</p>
+
+<h4>Custom scrollbar</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/mcustomscrollbar/jquery.mCustomScrollbar.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use custom content scroller</p>        
+
+<h4>Tags input plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/tagsinput/jquery.tagsinput.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use field with tags</p>
+        
+<h4>Google maps plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places">&lt;/script>
+</pre>
+<p>Allows you to use Google maps plugin</p>        
+
+<h4>Datatables plugin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/datatables/jquery.dataTables.min.js'>&lt;/script>
+</pre>
+<p>Allows you to use datatables plugin(sortable tables, with paging, search and other controls).</p>        
+
+<h4>Codemirror plguin</h4>
+<pre class="brush: xml">                    
+    &lt;script type='text/javascript' src='js/plugins/codemirror/codemirror.js'>&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/addon/edit/matchbrackets.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/htmlmixed/htmlmixed.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/xml/xml.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/javascript/javascript.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/css/css.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/clike/clike.js">&lt;/script>
+    &lt;script type='text/javascript' src="js/plugins/codemirror/mode/php/php.js">&lt;/script>
+</pre>
+<p>Allows you to use Codemirror plguin(WYSIWYG code editor).</p>                 
+
+<h4>ValidationEngine plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/validation/languages/jquery.validationEngine-en.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/validation/jquery.validationEngine.js">&lt;/script>  
+</pre>
+<p>Allows you to use validationEngine plugin</p>
+
+<h4>jQuery validation plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/jquery-validation/jquery.validate.min.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/jquery-validation/additional-methods.min.js">&lt;/script>
+</pre>
+<p>Allows you to use jQuery Validation form plugin</p>
+
+<h4>Bootstrap plugins</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/bootstrap/bootstrap-colorpicker.js">&lt;/script><!-- Colorpicker plugin -->
+    &lt;script type="text/javascript" src="js/plugins/bootstrap/bootstrap-datepicker.js">&lt;/script><!-- Datepicker plugin -->
+    &lt;script type="text/javascript" src="js/plugins/bootstrap/bootstrap-timepicker.min.js">&lt;/script><!-- Timepicker plugin -->
+    &lt;script type="text/javascript" src="js/plugins/bootstrap/bootstrap-file-input.js">&lt;/script><!-- Custom File Input -->
+    &lt;script type="text/javascript" src="js/plugins/bootstrap/bootstrap-select.js">&lt;/script><!-- Custom Select plugin -->
+</pre>
+
+<h4>Dropzone plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/dropzone/dropzone.min.js">&lt;/script>    
+</pre>
+<p>Allows you to use Dropzone plugin</p>
+
+<h4>File Input plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/fileinput/fileinput.min.js">&lt;/script>    
+</pre>
+<p>Allows you to use File Input plugin. Upload images with preview.</p>
+
+<h4>FileTree plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/filetree/jqueryFileTree.js">&lt;/script>    
+</pre>
+<p>Allows you to use File Tree plugin.</p>
+
+<h4>Fullcalendar plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/fullcalendar/fullcalendar.min.js">&lt;/script>    
+</pre>
+<p>Allows you to use Fullcalendar plugin.</p>
+
+<h4>iCheck plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/icheck/icheck.min.js">&lt;/script>    
+</pre>
+<p>Allows you to use iCheck plugin. Custom checkbox and radio buttons.</p>
+
+<h4>Masked Input plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/maskedinput/jquery.maskedinput.min.js">&lt;/script>    
+</pre>
+<p>Allows you to use Masked Input plugin. Creates rules for input text.</p>
+
+<h4>Morris Charts plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/morris/raphael-min.js">&lt;/script>    
+    &lt;script type="text/javascript" src="js/plugins/morris/morris.min.js">&lt;/script>    
+</pre>
+<p>Allows you to use Morris Charts plugin.</p>
+
+<h4>NVD3 Charts plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/nvd3/lib/d3.v3.js">&lt;/script>        
+    &lt;script type="text/javascript" src="js/plugins/nvd3/nv.d3.min.js">&lt;/script>
+</pre>
+<p>Allows you to use NVD3 Charts plugin.</p>
+
+<h4>OWL Carousel plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/owl/owl.carousel.min.js">&lt;/script>            
+</pre>
+<p>Allows you to use OWL Carousel plugin.</p>
+
+<h4>Rangeslider plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/rangeslider/jQAllRangeSliders-min.js">&lt;/script>            
+</pre>
+<p>Allows you to use Range Slider plugin.</p>
+
+<h4>ScrollToTop plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/scrolltotop/scrolltopcontrol.js">&lt;/script>            
+</pre>
+<p>Allows you to use Scroll To Top plugin.</p>
+
+<h4>Smart Wizard plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard-2.0.min.js">&lt;/script>            
+</pre>
+<p>Allows you to use Smart Wizard plugin.</p>
+
+<h4>Smart Wizard plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/smartwizard/jquery.smartWizard-2.0.min.js">&lt;/script>            
+</pre>
+<p>Allows you to use Smart Wizard plugin.</p>
+
+<h4>Summernote plugin</h4>
+<pre class="brush: xml">
+    &lt;script type="text/javascript" src="js/plugins/summernote/summernote.js">&lt;/script>            
+</pre>
+<p>Allows you to use Summernote plugin. WYSIWYG Editor.</p>
+
+<h4>Table Export plugin</h4>
+<pre class="brush: xml">    
+    &lt;script type="text/javascript" src="js/plugins/tableexport/tableExport.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/tableexport/jquery.base64.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/tableexport/html2canvas.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/sprintf.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/tableexport/jspdf/jspdf.js">&lt;/script>
+    &lt;script type="text/javascript" src="js/plugins/tableexport/jspdf/libs/base64.js">&lt;/script>       
+</pre>
+<p>Allows you to use Table Export plugin.</p>
+
+<h4>Tocify plugin</h4>
+<pre class="brush: xml">    
+    &lt;script type="text/javascript" src="js/plugins/tocify/jquery.tocify.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Tocify plugin. Content table plugin.</p>
+
+<h4>Bootstrap Tour plugin</h4>
+<pre class="brush: xml">    
+    &lt;script type="text/javascript" src="js/plugins/tour/bootstrap-tour.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Bootstrap Tour plugin.</p>
+
+<h4>Bootstro plugin</h4>
+<pre class="brush: xml">    
+    &lt;script type="text/javascript" src="js/plugins/tour/bootstro.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Bootstro Tour plugin.</p>
+
+<h4>Cropper Plugin</h4>
+<pre class="brush: xml">    
+    &lt;script type="text/javascript" src="js/plugins/cropper/cropper.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Cropping plugin.</p>
+
+<h4>Ion Range Slider Plugin</h4>
+<pre class="brush: xml">        
+    &lt;script type="text/javascript" src="js/plugins/ion/ion.rangeSlider.min.js">&lt;/script>
+</pre>
+<p>Allows you to use Ion range slider plugin.</p>
+
+
+
+<h4>Atlant JavaScripts</h4>
+<pre class="brush: xml">                     
+    &lt;script type="text/javascript" src="js/plugins.js">&lt;/script><!-- Inits of plugins - important -->
+    &lt;script type="text/javascript" src="js/actions.js">&lt;/script><!-- Template Scripts - important -->   
+
+    &lt;script type="text/javascript" src="js/demo_charts_morris.js">&lt;/script><!-- Demo Morris Charts -->
+    &lt;script type="text/javascript" src="js/demo_charts_nvd3.js">&lt;/script><!-- Demo NVD3 Charts -->
+    &lt;script type="text/javascript" src="js/demo_charts_rickshaw.js">&lt;/script><!-- Demo Rickshaw Charts -->
+    &lt;script type="text/javascript" src="js/demo_dashboard.js">&lt;/script><!-- Demo Dashboard Page -->
+    &lt;script type="text/javascript" src="js/file-handling.js">&lt;/script><!-- Demo File Handling Page -->
+    &lt;script type="text/javascript" src="js/demo_icons.js">&lt;/script><!-- Demo Icons Page -->
+    &lt;script type="text/javascript" src="js/demo_maps.js">&lt;/script><!-- Demo Maps Page -->
+    &lt;script type="text/javascript" src="js/demo_sliders.js">&lt;/script><!-- Demo Sliders Page -->
+    &lt;script type="text/javascript" src="js/demo_tables.js">&lt;/script><!-- Demo Table Page -->
+    &lt;script type="text/javascript" src="js/demo_tasks.js">&lt;/script><!-- Demo Tasks Page -->
+
+    &lt;script type="text/javascript" src="js/faq.js">&lt;/script><!-- FAQ page actions -->
+    &lt;script type="text/javascript" src="js/portlet.js">&lt;/script><!-- Portlet plugin -->
+    &lt;script type="text/javascript" src="js/settings.js">&lt;/script><!-- Settings -->
+</pre>
+        
+</section>
+
+        
+        
+<section id="how_to">
+	<h3>How-to...?</h3><hr class="notop">
+
+<h4>How to update v.1.4 to v.1.5?</h4>
+<p>Updated files:</p>        
+<ol>
+    <li>less/css/styles.less</li>
+    <li>less/css/theme-*.less</li>
+    <li>less/js/actions.js</li>
+    <li>less/js/plugins.js</li>
+</ol>
+<p>Added files:</p>
+<ol>    
+    <li>less/js/plugins/nestable/jquery.nestable.js</li>    
+</ol>
+<p>Html files is not included in this list. Easiest way to update is replace all files from folders: js,css.</p>
+<p>In v1.5 was added page builder. How to use it you can find below.</p>        
+        
+        
+<h4>How to update v.1.3 to v.1.4?</h4>
+<p>Updated files:</p>        
+<ol>
+    <li>less/css/styles.less</li>    
+    <li>less/js/actions.js</li>
+    <li>less/js/demo_file_handling.js</li>
+</ol>
+<p>Added files:</p>
+<ol>    
+    <li>less/js/demo_edit_profile.js</li>    
+    <li>less/js/plugins/form/jquery.form.js</li>
+    <li>less/js/plugins/jstree/*.js</li>
+    <li>less/js/plugins/tour/intro.min.js</li>
+    
+    <li>less/img/jstree/*</li>
+    <li>less/img/cards/*.png</li>        
+    
+    <li>less/css/rtl.less</li>
+    <li>less/css/introjs/introjs.min.css</li>
+    <li>less/css/jstree/jstree.min.css</li>    
+    
+    <li>less/assets/crop_image.php</li>    
+    <li>less/assets/upload_image.php</li>
+    
+</ol>
+<p>Html files is not included in this list. Easiest way to update is replace all files from folders: js,css,img,assets.</p>
+<p><strong>Important!</strong> Bootstro Tour Plugin was removed from template(reason: it's not updating, and have lots of troubles with BS3.3.0). Plugin was replaced by intro.js.</p>
+        
+<h4>How to update v.1.2 to v.1.3?</h4>
+<p>Updated files:</p>        
+<ol>
+    <li>less/css/styles.less</li>    
+    <li>less/js/plugins.js</li>
+    <li>less/js/actions.js</li>
+    <li>less/js/settings.js</li>
+</ol>
+<p>Added files:</p>
+<ol>    
+    <li>less/js/demo_file_handling.js</li>
+    <li>less/js/demo_sliders.js</li>
+    <li>less/js/plugins/ion/ion.rangeSlider.min.js</li>    
+    <li>less/js/plugins/cropper/cropper.min.js</li>    
+    
+    <li>less/img/ion/*.png</li>
+    <li>less/img/flags/*.png</li>
+    <li>less/img/backgrounds/*.jpg</li>
+    <li>less/img/loaders/page-loader.gif</li>
+    <li>less/img/logo-gray-big.png</li>
+    <li>less/img/logo-gray-big@2x.png</li>
+    
+    <li>less/css/cropper/cropper.min.css</li>
+    <li>less/css/ion/*.css</li>    
+    
+    <li>less/assets/cropping/*.php</li>    
+</ol>
+<p>All of this files should be loaded/replaced. Also there some html files in <strong>less/</strong>, we don't include it in this list.</p>
+<p>As always easiest way to update is replace all files from folders: js,css,img,assets :)</p>
+
+<h4>How to update v.1.1 to v.1.2?</h4>
+<p>Updated files:</p>
+<ol>
+    <li>less/css/styles.less</li>    
+    <li>less/js/plugins.js</li>
+    <li>less/js/actions.js</li>
+    <li>less/js/settings.js</li>
+    <li>less/js/plugins/bootstrap/bootstrap.min.js</li>
+</ol>
+<p>Added files:</p>
+<ol>    
+    <li>less/form-layouts-one-column.html</li>
+    <li>less/form-layouts-separated.html</li>
+    <li>less/form-layouts-tabbed.html</li>
+    <li>less/form-layouts-two-column.html</li>    
+</ol>
+<p>Easiest way to update template is replace files all from <strong>js & css</strong>.</p>
+
+        
+<h4>How to update v.1.0 to v.1.1?</h4>
+<p>Updated files:</p>
+<ol>
+    <li>less/css/styles.less</li>
+    <li>less/js/demo_dashboard.js</li>    
+    <li>less/js/plugins.js</li>
+    <li>less/js/actions.js</li>
+    <li>less/js/settings.js</li>
+    <li>less/js/plugins/moment.min.js</li>
+</ol>
+<p>Added files:</p>
+<ol>
+    <li>less/css/theme-light.less</li>
+    <li>less/js/faq.js</li>
+    <li>less/js/plugins/daterangepicker/daterangepicker.js</li>
+    <li>less/pages-faq.html</li>
+    <li>less/pages-blog-list.html</li>
+    <li>less/pages-blog-post.html</li>
+    <li>less/pages-search.html</li>    
+</ol>
+<p>Easiest way to update template is replace files all from <strong>js & css</strong>.</p>
+
+
+<h4>How to use builder?</h4>
+<p>First of all you should to know that this feature is on beta stage. So, it's included with not all elements in template.</p>
+<p>To get it works template should be uploaded on server that supports PHP 5+.</p>
+<ol>
+    <li>Open builder.html</li>
+    <li>Check checkbox if you want to use boxed mode</li>
+    <li>Select layout that you need</li>
+    <li>When you hover on header or content you will see handler, press on it.</li>
+    <li>Header elements can be included and removed</li>
+    <li>Content element also can be removed. We recommend you to start from grid. So after you pressed handler on content, choose grid12.</li>
+    <li>Once you have chosen grid you can choose other elements, for example panels,tabs,forms etc.</li>
+    <li>After you finished, click on cog(builder settings), and press Export.</li>
+</ol>
+
+<h4>How to start using Atlant template?</h4>
+<ol>
+    <li> Find folder <strong>html</strong> in downloaded package.</li>            
+    <li> Upload contents of <strong>html</strong> folder to your webserver</li>            
+    <li> Use <strong>blank.html</strong> as basic HTML file</li>
+</ol>
+
+<h4>How customize template?</h4>
+<p>Open folder <strong>less</strong> there you will find all you need to work with template.<br/>
+In <strong>css</strong> folder you will find .less files to customize template styles.<br/>
+In <strong>js</strong> folder you will find commented .js files and plugins.</p>
+
+<h4>How to change template Theme?</h4>
+<p>If you using files from <strong>html</strong> folder:<br/>
+    Open <strong>html/css</strong> folder. There you will find 10 custom theme files. After you choose one of this themes, change CSS file in your html documents:        
+</p>
+<pre class="brush: xml">
+    <!-- CSS INCLUDE -->        
+    &lt;link rel="stylesheet" type="text/css" id="theme" href="css/YourThemeGoesHere.css"/>
+    <!-- EOF CSS INCLUDE -->                                           
+</pre>
+<p>Now available 10 themes:<br/>
+<strong>
+theme-default.css<br/>
+theme-default-head-light.css<br/>
+theme-dark.css<br/>
+theme-dark-head-light.css<br/>
+theme-forest.css<br/>
+theme-forest-head-light.css<br/>
+theme-night.css<br/>
+theme-night-head-light.css<br/>
+theme-serenity.css<br/>
+theme-serenity-head-light.css</strong>
+</p>
+
+
+<h4>How to use refresh panel function?</h4>
+    <p>All you need is call function <strong>panel_refresh(panel,event,callback)</strong>. For example: </p>
+<pre class="brush: js">
+                
+    panel_refresh($("#panel_to_refresh"), "shown", call_back_function); // Call on Refresh is Shown
+    panel_refresh($("#panel_to_refresh"), "hidden", call_back_function); // Call on Refresh is Hidden
+            
+</pre>
+    <p>When function called first time it's set to block class <code>.panel-refreshing</code>. When you call function second time for same block, state will be changed to default.</p>
+    <p>More information and sample you can find on ui-panels.html page.</p>
+
+<h4>How to use remove panel function?</h4>
+    <p>All you need is call function <strong>panel_remove(panel,event,callback)</strong>. For example: </p>
+<pre class="brush: js">
+
+    panel_remove($("#panel_to_remove"), "after", call_back_function);   // Call after panel removed
+    panel_remove($("#panel_to_remove"), "before", call_back_function);  // Call before panel removed
+
+</pre>    
+    <p>More information and sample you can find on ui-panels.html page.</p>
+
+<h4>How to use collapse panel function?</h4>
+    <p>All you need is call function <strong>panel_collapse(panel,event,callback)</strong>. For example: </p>
+<pre class="brush: js">
+
+    panel_collapse($("#panel_to_collapse"), "shown", call_back_function);   // Call on panel shown
+    panel_collapse($("#panel_to_collapse"), "hidden", call_back_function);  // Call on panel hidden
+
+</pre>    
+    <p>More information and sample you can find on ui-panels.html page.</p>    
+    
+<h4>How to use custom progress bar?</h4>
+    <p>There two actions for progress bar <code>show</code> - create new progressbar with options, <code>update</code> - update progressbar with options, <code>destroy</code> - remove.</p>    
+<pre class="brush: js">
+    $.mpb(action,options); // call functions
+    
+    $.mpb('show',{value: [0,10]}); // Call default progress bar with 10% progress
+    $.mpb('update',{value: [10,100]}); // Update progress bar to 100% progress
+    $.mpb('destroy'); // Remove progress bar
+</pre>
+    <p><strong>Options:</strong></p>
+    <p><strong>value</strong>: array/integer. If isset array first element of it should be integer value <strong>from</strong>, second <strong>to</strong>. If isset integer it will be value <strong>to</strong></p>
+    <p><strong>position</strong>: NULL/string. Available position: <strong>bottom</strong>. Default is NULL(top).</p>
+    <p><strong>speed</strong>: integer. Set speed of animation. Default: 20;</p>
+    <p><strong>state</strong>: NULL/string. There 4 available custom states: success,warning,info,danger. Default NULL - base theme color.</p>
+    <p><strong>complete</strong>: NULL/function. Callback function calling after animation finished.
+    <p>&nbsp;</p>
+    <p>You can find this plugin in js/plugins.js</p>
+    
+    <p>More information and sample you can find on ui-alerts-popups.html</p>
+    
+        
+    <h4>How to create a custom scrollbar in panel?</h4>        
+<pre class="brush: xml">
+
+    <div class="panel panel-default"><!-- some content box -->
+        
+        <div class="scroll" style="height: 300px;"> <!-- new content wrapper with custom scroll -->
+            ...
+        </div>
+        
+    </div>                                                 
+
+</pre>        
+<p>Important thing to use scrollbar is add for wrapper personal div, and set for it height as on example above.</p>
+
+<h4>How to get boxed layout?</h4>        
+<p>Add class <strong>page-container-boxed</strong> to <strong>body</strong> tag to get layout boxed.</p>
+
+<h4>How to get navigation toggled?</h4>        
+<p>Add class <strong>page-navigation-toggled</strong> to <strong>page-container</strong> to get navigation toggled on load.</p>
+
+<h4>How to get navigation direction right?</h4>        
+<p>Add class <strong>page-mode-rtl</strong> to <strong>page-container</strong> to get navigation aligned right.</p>
+    
+<h4>How to get top navigation fixed?</h4>        
+<p>Add class <strong>page-navigation-top-fixed</strong> to <strong>page-container</strong> to get top navigation fixed.</p>
+
+<h4>How to get custom navigation style?</h4>        
+<p>Add class <strong>x-navigation-custom</strong> to <strong>x-navigation</strong> to get custom styled navigation.</p>
+
+<h4>How to use backgrounds for boxed mode?</h4>        
+<p>In v1.3 available 10 backgrounds for boxed mode: .wall_1, .wall_2, .wall_3, .wall_4, .wall_5, .wall_6, .wall_7, .wall_8, .wall_9, .wall_10.</p>
+<p>To use any of this backgrounds add class to body tag:</p>
+<pre class="brush: xml">
+
+    &lt;body class="page-container-boxed wall_2">
+        
+        ...
+        
+    &lt;/body>
+
+</pre>  
+<p>.wall_1 is default background</p>
+
+</section>
+<section id="credits">
+	<h3>Credits</h3><hr class="notop">
+        
+        <ul>
+            <li><a href="http://jqueryui.com/">jQuery</a></li>
+            <li><a href="http://jqueryui.com/">jQuery UI</a></li>
+            <li><a href="http://getbootstrap.com/">Twitter Bootstrap</a></li>
+            <li><a href="http://omnipotent.net/jquery.sparkline/#s-about">jQuery Sparkline charts</a></li>
+            <li><a href="http://anthonyterrien.com/knob/">jQuery Knob charts</a></li>
+            <li><a href="http://needim.github.io/noty/">Notify plugin</a></li>
+            <li><a href="http://datatables.net/">jQuery DataTables</a></li>
+            <li><a href="http://manos.malihu.gr/jquery-custom-content-scroller/">jQuery mCustomScrollBar</a></li>
+            <li><a href="http://xoxco.com/projects/code/tagsinput/">jQuery TagsInput plugin</a></li>
+            <li><a href="http://digitalbush.com/projects/masked-input-plugin/">jQuery Maskedinput plugin</a></li>
+            <li><a href="http://www.position-absolute.com/">jQuery Validation Engine plugin</a></li>                          
+            <li><a href="http://jqueryvalidation.org/">jQuery Validation</a></li>               
+            <li><a href="http://hackerwins.github.io/summernote/">Summernote editor</a></li>
+            <li><a href="http://codemirror.net">Codemirror plugin</a></li>            
+            <li><a href="http://jvectormap.com/">jVectorMap plugin</a></li>            
+            <li><a href="http://www.lesscss.org/">Less css plugin</a></li>            
+            <li><a href="https://github.com/blueimp/Gallery">Blueimp Gallery</a></li>
+            <li><a href="http://www.eyecon.ro/bootstrap-colorpicker">Bootstrap colorpicker</a></li>
+            <li><a href="https://github.com/eternicode/bootstrap-datepicker/">Bootstrap datepicker</a></li>
+            <li><a href="https://github.com/kartik-v/bootstrap-fileinput">Bootstrap file input</a></li>
+            <li><a href="http://silviomoreto.github.io/bootstrap-select/">Bootstrap select</a></li>
+            <li><a href="http://jdewit.github.com/bootstrap-timepicker ">Bootstrap timepicker</a></li>
+            <li><a href="http://www.dropzonejs.com/">Dropzone</a></li>
+            <li><a href="http://plugins.krajee.com/file-input">File Input</a></li>
+            <li><a href="http://www.abeautifulsite.net/jquery-file-tree/">File tree</a></li>
+            <li><a href="http://arshaw.com/fullcalendar/">Fullcalendar</a></li>
+            <li><a href="https://github.com/fronteed/iCheck/">iCheck</a></li>
+            <li><a href="http://morrisjs.github.io/morris.js/">Morris charts</a></li>
+            <li><a href="http://nvd3.org/">NDV3 charts</a></li>
+            <li><a href="http://owlgraphic.com/owlcarousel/">OWL Carousel</a></li>
+            <li><a href="http://ghusse.github.io/jQRangeSlider/">Range Slider</a></li>
+            <li><a href="http://code.shutterstock.com/rickshaw/">Rickshaw charts</a></li>
+            <li><a href="http://www.dynamicdrive.com/dynamicindex3/scrolltop.htm">Scroll To Top</a></li>            
+            <li><a href="http://www.techlaboratory.net/smartwizard">Smart Wizard</a></li>
+            <li><a href="http://kayalshri.github.io/tableExport.jquery.plugin/">Table Export</a></li>
+            <li><a href="http://gregfranko.com/jquery.tocify.js/">Tocify</a></li>
+            <li><a href="http://www.dynamicdrive.com/dynamicindex3/scrolltop.htm">Scroll To Top</a></li>
+            <li><a href="http://bootstraptour.com">Bootstrap Tour</a></li>
+            <li><a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html">Ion.RangeSlider</a></li>
+            <li><a href="http://www.jstree.com/">jsTree</a></li>
+            <li><a href="http://usablica.github.io/intro.js/">Intro.js</a></li>
+        </ul>        
+        
+</section>    
+<section id="changelog">
+        <h3>Changelog</h3><hr class="notop">
+        
+        <ul>
+            <li>
+                <strong>Version 1.6</strong> - 27.01.2015
+                <ul>
+                    <li>Added Page: Registration [ <a href="http://aqvatarius.com/themes/atlant_v1_6/html/pages-registration.html">preview</a> ]</li>
+                    <li>Added Page: Registration with Login [ <a href="http://aqvatarius.com/themes/atlant_v1_6/html/pages-registration-login.html">preview</a> ]</li>
+                    <li>Added Page: Forgot Password [ <a href="http://aqvatarius.com/themes/atlant_v1_6/html/pages-forgot-password.html">preview</a> ]</li>
+                    <li>Added Page/Layout: Tabbed Page [ <a href="http://aqvatarius.com/themes/atlant_v1_6/html/layout-tabbed.html">preview</a> ]</li>
+                    <li>Added Page/Layout: Custom Header [ <a href="http://aqvatarius.com/themes/atlant_v1_6/html/layout-custom-header.html">preview</a> ]</li>
+                    <li>Added Page/Layout: Adaptive Panels [ <a href="http://aqvatarius.com/themes/atlant_v1_6/html/layout-adaptive-panels.html">preview</a> ]</li>                    
+                    <li>Added Page/UI: Slide Menu [ <a href="http://aqvatarius.com/themes/atlant_v1_6/html/ui-slide-menu.html">preview</a> ]</li>
+                    <li>Added: Spinner to Form Elements page</li>
+                    <li>Fixed: Datepicker(and added more samples)</li>
+                    <li>Fixed: minor bugs</li>
+                    <li>Improved javascript code(lots of changes in structure to increase the speed of template loading and work)</li>                    
+                    <li>Updated documentation</li>
+                </ul>
+            </li>            
+            <li>
+                <strong>Version 1.5</strong> - 14.12.2014
+                <ul>
+                    <li>Added Page Builder(beta). Gives you a possibility to create page layouts and some custom elements.</li>
+                    <li>Added Feature: show toggled navigation on hover</li>
+                    <li>Added Feature: show item of toggled navigation on hover</li>
+                    <li>Added Page sidebar</li>
+                    <li>Added Nestable list plugin</li>                    
+                    <li>Fixed minor bugs</li>
+                    <li>Updated documentation</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Version 1.4</strong> - 01.12.2014
+                <ul>
+                    <li>Added RTL page layout(beta)</li>
+                    <li>Added Page loading frame v2</li>
+                    <li>Added Invoice page sample</li>
+                    <li>Added User edit page, with ajax photo change sample(+php files)</li>
+                    <li>Added Login v2 pages(flexible block)</li>
+                    <li>Added jQuery Autocomplete plugin support</li>
+                    <li>Added jQuery jsTree interactive trees</li>
+                    <li>Added Front-end PSD,PNG files(main page)</li>
+                    <li>Added Intro.js tour plugin</li>
+                    <li>Added jQuery form plugin</li>
+                    <li>Updated Page loading frame function</li>
+                    <li>Updated Bootstrap to v3.3.1</li>
+                    <li>Updated Slider Revolution Responsive jQuery Plugin</li>
+                    <li>Fixed minor bugs</li>
+                    <li>Updated documentation</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Version 1.3</strong> - 15.11.2014
+                <ul>
+                    <li>Added lock screen feature</li>
+                    <li>Added custom top navigation</li>
+                    <li>Added page loading feature</li>
+                    <li>Added Ion range slider plugin</li>
+                    <li>Added custom size of switch button</li>
+                    <li>Added image crop plugin (+php files)</li>
+                    <li>Added language bar</li>
+                    <li>Added 9 new backgrounds for boxed mode</li>
+                    <li>Fixed table features(datatables,mobile responsiveness etc.)</li>
+                    <li>Fixed minor bugs in design</li>
+                    <li>Updated documentation</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Version 1.2</strong> - 05.11.2014
+                <ul>
+                    <li>Updated to Bootstrap v3.3.0</li>
+                    <li>Added form layout pages: One Column, Two Column, Tabbed, Separated Rows</li>
+                    <li>Added panel full screen feature</li>
+                    <li>Minor bugs fixed</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Version 1.1</strong> - 29.10.2014
+                <ul>
+                    <li>Added <strong>Slider Revolution Responsive jQuery Plugin</strong> (<strong>Save $14</strong>)</li>
+                    <li>Added <strong>Front-end Template</strong></li>
+                    <li>Added Layered <strong>PSD, PNG files</strong></li>
+                    <li>Added new pages: <strong>FAQ</strong>, Search, Posts, Single Post</li>
+                    <li>Added plugin Date Range Picker</li>
+                    <li>Added light theme</li>
+                </ul>
+            </li>
+            <li>
+                <strong>Version 1.0</strong> - 16.10.2014
+                <ul>
+                    <li>Release</li>
+                </ul>
+            </li>                    
+        </ul>
+        
+</section>
+</div>
+
+</body>
+</html>

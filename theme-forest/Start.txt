@@ -1,0 +1,10 @@
+PACKAGE v.1.6
+    - builder 			--> Atlant layout builder v1.0
+    - documents
+        - Atlant 		--> Atlant Documentation v1.6 !!!! DO NOT FORGET TO CHECK IT OUT !!!! 
+        - Revolution Slider 	--> Slider documentation/editor/samples (used in front-end)
+
+    - front-end 		--> Atlant Front-End Template v1.1
+    - html 			--> Atlant HTML version v1.6
+    - less 			--> Atlant LessCss version v1.6
+    - PSD, PNG 			--> Layered PSD & PNG FILES

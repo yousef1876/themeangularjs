@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Flat Dream Documentation</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="js/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	
+	<!-- Include Prettify -->
+	<script type="text/javascript" src="js/prettify/run_prettify.js"></script>
+	<link type="text/css" rel="stylesheet" href="js/prettify/prettify.css" />
+
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-target="#right-menu" data-offset="150">
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Flat Dream - Responsive Admin Template <br/ >
+          <h5>Documentation -  Version 1.1.6</h5></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <!-- Example row of columns -->
+		<div class="row">
+	  
+			<!-- LEFT SIDEBAR -->
+			<div class="col-md-3" id="sidebar">
+				<div role="complementary" id="right-menu" class="bs-sidebar" data-spy="affix" data-offset-top="435">
+					<ul class="nav bs-sidenav">
+						<li>
+						  <a href="#general">General</a>
+						  <ul class="nav">
+							<li class=""><a href="#structure">HTML Structure</a></li>
+							<li><a href="#head-structure">Basic Head</a></li>
+							<li><a href="#topbar">Top Bar</a></li>
+							<li><a href="#sidebar-structure">Sidebar</a></li>
+							<li><a href="#content-structure">Content</a></li>
+							<li><a href="#sub-header">Sub-Header</a></li>
+							<li><a href="#grid-system">Columns & Grid System</a></li>
+							<li><a href="#panels">Panels</a></li>
+							<li><a href="#basic-javascript">JavaScript Init</a></li>
+							<li><a href="#plugins-includes">Plugins Includes</a></li>
+						  </ul>
+						</li>
+						<li>
+						  <a href="#ui-elements">UI Elements</a>
+						  <ul class="nav">
+                <li><a href="#ui-general">General Elements</a></li>
+                <li><a href="#ui-alerts">Theme Alerts</a></li>
+                <li><a href="#ui-two-column-menu">Two Column Menu</a></li>
+                <li><a href="#ui-notifications">Notifications</a></li>
+                <li><a href="#ui-buttons">Buttons</a></li>
+                <li><a href="#ui-icons">Icons</a></li>
+                <li><a href="#ui-tabs-accordions">Tabs & Accordions</a></li>
+						  </ul>
+						</li>
+						<li>
+						  <a href="#change-log">Change Log</a>
+						  <ul class="nav">
+                <li><a href="#log-1-0">Version 1.0</a></li>
+                <li><a href="#log-1-1">Version 1.1</a></li>
+                <li><a href="#log-1-1-2">Version 1.1.2</a></li>
+                <li><a href="#log-1-1-3">Version 1.1.3</a></li>
+                <li><a href="#log-1-1-4">Version 1.1.4</a></li>
+                <li><a href="#log-1-1-5">Version 1.1.6</a></li>
+						  </ul>
+						</li>
+					
+					</ul>
+				</div>		
+			
+			</div>
+			<!-- END OF LEFT SIDEBAR-->
+			
+			<!-- DOCUMENTANTION -->
+			<div id="contenido" class="col-md-9">
+				<h1 id="general">General</h1>
+				<p>In this section you will find the multiple HTML and CSS structures that were applied to the general style of the template.</p>
+				<h3 id="structure">HTML Structure</h3>
+				<p>All the pages in this template are divided in three parts <code>Top Bar</code>, <code>Side Bar</code> and <code>Content</code>.</p>
+				<img src="docs_images/img1.jpg" />
+        
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;body&gt;
+
+  &lt;div id=&quot;cl-wrapper&quot;&gt;
+    &lt;div class=&quot;cl-sidebar&quot;&gt;
+    &lt;!--Sidebar Menu--&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;container-fluid&quot; id=&quot;pcont&quot;&gt;
+       
+      &lt;div id=&quot;head-nav&quot; class=&quot;navbar navbar-default&quot;&gt;
+      &lt;!--Top Bar--&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;cl-mcont&quot;&gt;
+      &lt;!--Content--&gt;
+      &lt;/div&gt;
+    &lt;/div&gt; 
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+				
+				<h3 id="head-structure">Basic Head Structure</h3>
+        <p>In the head we include the following elements in their respective order:</p>
+<pre>
+- Google Fonts (CSS)
+- Bootstrap core (CSS)
+- Gritter Notifications (CSS)
+- Font Awesome 4 (CSS)
+
+-- Plugins CSS --
+
+- Template Style (CSS)</pre>
+				<div class="row">
+				<pre class="prettyprint linenums" >
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;meta name=&quot;description&quot; content=&quot;&quot;&gt;
+  &lt;meta name=&quot;author&quot; content=&quot;&quot;&gt;
+  &lt;link rel=&quot;shortcut icon&quot; href=&quot;images/icon.png&quot;&gt;
+
+  &lt;title&gt;Flat Dream&lt;/title&gt;
+  &lt;link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800' rel='stylesheet' type='text/css'&gt;
+  &lt;link href='http://fonts.googleapis.com/css?family=Raleway:300,200,100' rel='stylesheet' type='text/css'&gt;
+
+  &lt;!-- Bootstrap core CSS --&gt;
+  &lt;link href=&quot;js/bootstrap/dist/css/bootstrap.css&quot; rel=&quot;stylesheet&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.gritter/css/jquery.gritter.css&quot; /&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;fonts/font-awesome-4/css/font-awesome.min.css&quot;&gt;
+
+  &lt;!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries --&gt;
+  &lt;!--[if lt IE 9]&gt;
+    &lt;script src=&quot;../../assets/js/html5shiv.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;../../assets/js/respond.min.js&quot;&gt;&lt;/script&gt;
+  &lt;![endif]--&gt;
+  
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.nanoscroller/nanoscroller.css&quot; /&gt;
+  &lt;link href=&quot;css/style.css&quot; rel=&quot;stylesheet&quot; /&gt;	
+&lt;/head&gt;</pre>
+				</div>
+        
+        <h3 id="topbar">Top Bar</h3>
+				<p>The top bar is divided in 2 sections <code>Notifications</code> and <code>Profile Menu</code>.</p>
+        <img src="docs_images/img2.jpg" />
+				<div class="row">
+					<pre class="prettyprint linenums" >
+&lt;!-- TOP BAR --&gt;
+&lt;div id=&quot;head-nav&quot; class=&quot;navbar navbar-default&quot;&gt;
+  &lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;navbar-collapse&quot;&gt;
+      &lt;ul class=&quot;nav navbar-nav navbar-right user-nav&quot;&gt;
+       &lt;!-- Right Profile Menu Items --&gt;
+      &lt;/ul&gt;			
+      &lt;ul class=&quot;nav navbar-nav not-nav&quot;&gt;
+      &lt;!-- Menu Notification Items --&gt;
+      &lt;/ul&gt;
+
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+        
+        <h3 id="sidebar-structure">Sidebar</h3>
+				<p>This is the basic HTML structure for the sidebar.</p>
+				<div class="row">
+					<pre class="prettyprint linenums" >
+&lt;div class=&quot;cl-sidebar&quot;&gt;
+  &lt;div class=&quot;cl-toggle&quot;&gt;&lt;i class=&quot;fa fa-bars&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;div class=&quot;cl-navblock&quot;&gt;
+    &lt;div class=&quot;menu-space&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+        &lt;!--LOGO--&gt;
+        &lt;div class=&quot;sidebar-logo&quot;&gt;
+          &lt;div class=&quot;logo&quot;&gt;
+              &lt;a href=&quot;index2.html&quot;&gt;&lt;/a&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;side-user&quot;&gt;
+        &lt;!-- User progress bar--&gt;
+        &lt;/div&gt;
+        &lt;!--Menu--&gt;
+        &lt;ul class=&quot;cl-vnavigation&quot;&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;i class=&quot;fa fa-icon-name&quot;&gt;&lt;/i&gt;First Level Item&lt;/a&gt;
+            &lt;ul class=&quot;sub-menu&quot;&gt;
+              &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Second Level Item&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+
+        <h3 id="content-structure">Content</h3>
+				<p>This is the basic HTML structure for the main container.</p>
+				<div class="row">
+					<pre class="prettyprint linenums" >
+&lt;div class=&quot;container-fluid&quot; id=&quot;pcont&quot;&gt;
+  &lt;div class=&quot;cl-mcont&quot;&gt;
+    &lt;!-- Content goes here --&gt;
+  &lt;/div&gt;
+&lt;/div&gt; </pre>
+				</div>
+				
+        <h3 id="sub-header">Sub-Header</h3>
+				<p>In this element you can put the page title, breadcrums, etc... Put it inside the <code>.container-fluid</code> div and before the <code>.cl-mcont</code></p>
+        <img src="docs_images/img4.jpg" />
+				<div class="row">
+					<pre class="prettyprint linenums" >
+&lt;div class=&quot;page-head&quot;&gt;
+  &lt;ol class=&quot;breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;active&quot;&gt;Sub Category&lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;	
+  
+  &lt;div class=&quot;cl-mcont&quot;&gt;
+    &lt;!-- Content... --&gt;
+  &lt;/div&gt;
+&lt;/div&gt; </pre>
+				</div>
+				
+        
+  <h3 id="grid-system">Columns & Grid System</h3>
+  <p>This template uses Bootstrap 3 for almost all elements, if you don't know how to use it i highly recommend you to read <a href="http://getbootstrap.com">Bootstrap 3 Documentation</a> before to get started. You can see it in action at <code>ui-grid.html</code> file. <br/><br/>This is a basic example of bootstrap grid system:</p>
+  <div class="row show-grid">
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+  <div class="col-md-1">.col-md-1</div>
+</div>
+<div class="row show-grid">
+  <div class="col-md-8">.col-md-8</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row show-grid">
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+  <div class="col-md-4">.col-md-4</div>
+</div>
+<div class="row show-grid">
+  <div class="col-md-6">.col-md-6</div>
+  <div class="col-md-6">.col-md-6</div>
+</div>
+
+  <h4>HTML Code</h4>
+<pre class="prettyprint linenums" >
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+  &lt;div class=&quot;col-md-1&quot;&gt;.col-md-1&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;.col-md-8&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;</pre>
+
+  <h3 id="panels">Panels</h3>
+  <p>The panels boxes are a basic structural elements to wrap any HTML content with a visual standard box, they are divided in <code>Head</code> and <code>Content</code>. </p>
+  <p>Panel width is determinated by its parent element, usually a <code>&lt;div class="col-#-#"&gt;&lt;/div&gt;</code>:</p>
+  <img src="docs_images/img3.jpg" />
+<div class="row">
+<pre class="prettyprint linenums col-md-6" >
+&lt;div class=&quot;block-flat&quot;&gt;
+  &lt;div class=&quot;header&quot;&gt;
+    &lt;h3&gt;Title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;content&quot;&gt;
+    &lt;!-- Content --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>
+
+    <h3 id="basic-javascript">Basic Javascript</h3>
+    <p>The javascript core functions are on <code>js/behaviour/core.js</code>, you must include this file in all the pages of your proyect.</p>
+    
+  <h3>General Components</h3>
+  <p>These are the elements initialized in <code>"core.js"</code> method:</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sidebar Functionality</td>
+        <td>Sidebar interactions</td>
+      </tr>
+      <tr>
+        <td>Tooltips</td>
+        <td>Initializes the tooltips, and can be used in any HTML Object with <code>data-toggle="tooltip"</code> attribute.<br/>Example: <br/>
+<pre class="prettyprint linenums" >&lt;a data-original-title=&quot;I am a Tooltip&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot;&gt;Tooltip&lt;/a&gt;</pre></td>
+      </tr>
+      <tr>
+        <td>Popovers</td>
+        <td>Initializes the popovers, and can be used in any HTML Object with <code>data-popover="popover"</code> attribute.<br/>Example: <br/>
+<pre class="prettyprint linenums" >&lt;a data-placement=&quot;top&quot; data-content=&quot;content...&quot; data-original-title=&quot;Title&quot; data-popover=&quot;popover&quot; href=&quot;#&quot;&gt;Popover&lt;/a&gt;</pre></td>
+      </tr>
+      <tr>
+        <td>Nano Scroller</td>
+        <td>Initializes the NanoScroller plugin to use it with <code>".nscroller"</code> class.</td>
+      </tr>
+      <tr>
+        <td>Nestable Lists</td>
+        <td>Initializes the Nestable Lists plugin to use it with <code>".dd"</code> class.</td>
+      </tr>
+      <tr>
+        <td>Bootstrap Switch</td>
+        <td>Initializes the Switch plugin to use it with <code>".switch"</code> class.</td>
+      </tr>
+      <tr>
+        <td>DateTime Picker</td>
+        <td>Initializes the DateTime Picker plugin to use it with <code>".datetime"</code> class.</td>
+      </tr>
+      <tr>
+        <td>Select2</td>
+        <td>Initializes the Select2 plugin to use it with <code>".select2"</code> class.</td>
+      </tr>
+      <tr>
+        <td>Select2 - Tags</td>
+        <td>Initializes the Select2 Tags plugin option to use it with <code>".tags"</code> class.</td>
+      </tr>
+      <tr>
+        <td>Bootstrap Slider</td>
+        <td>Initializes the Slider plugin to use it with <code>".bslider"</code> class.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3 id="plugins-includes">Plugins Includes</h3>
+  <p>Here are the required files for each plugin:</p>
+
+  <h4>Nano Scroller</h4>
+  <p>This plugin can be found in the dashboard chat and notification menu examples.</p>
+<p>Visit the <a href="http://jamesflorentino.github.io/nanoScrollerJS/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;!-- Nano Scroller --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.nanoscroller/jquery.nanoscroller.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot; href=&quot;js/jquery.nanoscroller/nanoscroller.css&quot; /&gt;</pre>
+
+
+
+<h4>Spark Line</h4>
+<p>This plugin can be found in the dashboard charts.</p>
+<p>Visit the <a href="http://omnipotent.net/jquery.sparkline/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.sparkline/jquery.sparkline.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+
+<h4>jQuery Flot Charts</h4>
+<p>This plugin can be found in the dashboard charts.</p>
+<p>Visit the <a href="http://www.flotcharts.org/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.flot/jquery.flot.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.flot/jquery.flot.pie.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.flot/jquery.flot.resize.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.flot/jquery.flot.labels.js&quot;&gt;&lt;/script&gt;</pre>
+
+
+<h4>Nestable Lists</h4>
+<p>This plugin can be found in Nestable Lists page.</p>
+<p>Visit the <a href="http://dbushell.github.io/Nestable/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.nestable/jquery.nestable.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Easy Pie Chart</h4>
+<p>This plugin can be found in the dashboard charts.</p>
+<p>Visit the <a href="http://rendro.github.io/easy-pie-chart/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.easypiechart/jquery.easy-pie-chart.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot; href=&quot;js/jquery.easypiechart/jquery.easy-pie-chart.css&quot; /&gt;</pre>
+
+<h4>Bootstrap Switch</h4>
+<p>This plugin can be found in the forms pages.</p>
+<p>Visit the <a href="http://www.bootstrap-switch.org/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.switch/bootstrap-switch.min.js&quot;&gt;&lt;/script&gt;
+&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot; href=&quot;js/bootstrap.switch/bootstrap-switch.css&quot; /&gt;</pre>
+
+<h4>Date Time Picker</h4>
+<p>This plugin can be found in the forms pages.</p>
+<p>Visit the <a href="http://www.malot.fr/bootstrap-datetimepicker">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot; href=&quot;js/bootstrap.datetimepicker/css/bootstrap-datetimepicker.min.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.datetimepicker/js/bootstrap-datetimepicker.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Jquery Select2</h4>
+<p>This plugin can be found in the forms pages.</p>
+<p>Visit the <a href="http://ivaynberg.github.io/select2/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot; href=&quot;js/jquery.select2/select2.css&quot; /&gt;
+&lt;script src=&quot;js/jquery.select2/select2.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Bootstrap Slider</h4>
+<p>This plugin can be found in the forms pages.</p>
+<p>Visit the <a href="http://www.eyecon.ro/bootstrap-slider">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot; href=&quot;js/bootstrap.slider/css/slider.css&quot; /&gt;
+&lt;script src=&quot;js/bootstrap.slider/js/bootstrap-slider.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Google Maps API</h4>
+<p>This plugin can be found in maps page.</p>
+<p>Visit the <a href="https://developers.google.com/maps/documentation/javascript/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Jquery Gritter Notifications</h4>
+<p>This plugin can be found in UI Elements &gt; General page.</p>
+<p>Visit the <a href="https://github.com/jboesch/Gritter">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.gritter/css/jquery.gritter.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.gritter/js/jquery.gritter.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>CKEditor</h4>
+<p>This plugin can be found in UI Elements &gt; General page.</p>
+<p>Visit the <a href="http://ckeditor.com/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script src=&quot;js/ckeditor/ckeditor.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/ckeditor/adapters/jquery.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Fuel UX - Wizard</h4>
+<p>We use this plugin just for wizzard complement and you can see it in  Forms &gt; Wizard page.</p>
+<p>Visit the <a href="http://exacttarget.github.io/fuelux/#wizard">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link href=&quot;js/fuelux/css/fuelux.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link href=&quot;js/fuelux/css/fuelux-responsive.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/fuelux/loader.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Data Tables</h4>
+<p>This plugin can be found in Tables &gt; Data Tables.</p>
+<p>Visit the <a href="http://datatables.net">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot;type=&quot;text/css&quot; href=&quot;js/jquery.datatables/bootstrap-adapter/css/datatables.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.datatables/jquery.datatables.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.datatables/bootstrap-adapter/js/datatables.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>jQuery Masked Input</h4>
+<p>This plugin can be found in Forms &gt; Masks.</p>
+<p>Visit the <a href="http://digitalbush.com/projects/masked-input-plugin">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script src=&quot;js/jquery.maskedinput/jquery.maskedinput.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Parsley</h4>
+<p>This plugin can be found in Forms &gt; Validation.</p>
+<p>Visit the <a href="http://parsleyjs.org/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script src=&quot;js/jquery.parsley/parsley.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Prettify</h4>
+<p>This plugin can be found in Typography.</p>
+<p>Visit the <a href="http://code.google.com/p/google-code-prettify/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script type=&quot;text/javascript&quot; src=&quot;js/prettify/run_prettify.js&quot;&gt;&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;js/prettify/prettify.css&quot; /&gt;</pre>
+
+<h4>Modernizr</h4>
+<p>This plugin can be found in form elements</p>
+<p>Visit the <a href="http://modernizr.com/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script src=&quot;js/modernizr.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+</pre>
+
+<h4>Intro.js</h4>
+<p>This plugin can be found in dashboard</p>
+<p>Visit the <a href="http://usablica.github.io/intro.js/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/intro.js/introjs.css&quot; /&gt;
+&lt;script src=&quot;js/intro.js/intro.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Drop Zone</h4>
+<p>This plugin can be found in form upload</p>
+<p>Visit the <a href="http://www.dropzonejs.com/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/dropzone/css/dropzone.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/dropzone/dropzone.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>iCheck</h4>
+<p>This plugin can be found in form elements</p>
+<p>Visit the <a href="http://fronteed.com/iCheck/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link href=&quot;js/jquery.icheck/skins/square/blue.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.icheck/icheck.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Bootstrap-wysihtml5</h4>
+<p>This plugin can be found in form text editors</p>
+<p>Visit the <a href="https://github.com/jhollingworth/bootstrap-wysihtml5/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/bootstrap.wysihtml5/src/bootstrap-wysihtml5.css&quot;&gt;&lt;/link&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.wysihtml5/lib/js/wysihtml5-0.3.0.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.wysihtml5/src/bootstrap-wysihtml5.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Summernote</h4>
+<p>This plugin can be found in form text editors</p>
+<p>Visit the <a href="http://hackerwins.github.io/summernote/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/bootstrap.summernote/dist/summernote.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.summernote/dist/summernote.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Masonry</h4>
+<p>This plugin can be found in gallery page</p>
+<p>Visit the <a href="http://masonry.desandro.com/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script type=&quot;text/javascript&quot; src=&quot;js/masonry.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Magnific Popup</h4>
+<p>This plugin can be found in gallery page</p>
+<p>Visit the <a href="http://dimsemenov.com/plugins/magnific-popup/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.magnific-popup/dist/magnific-popup.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.magnific-popup/dist/jquery.magnific-popup.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>jVectorMap</h4>
+<p>This plugin can be found in vector maps page</p>
+<p>Visit the <a href="http://jvectormap.com/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; href=&quot;js/jquery.vectormaps/jquery-jvectormap-1.2.2.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;/&gt;
+&lt;script src=&quot;js/jquery.vectormaps/jquery-jvectormap-1.2.2.min.js&quot;&gt;&lt;/script&gt;</pre>
+
+<h4>Codemirror</h4>
+<p>This plugin can be found in Code Editor</p>
+<p>Visit the <a href="http://codemirror.net/doc/manual.html">Official Documentation</a></p>
+<pre class="prettyprint linenums" >
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.codemirror/lib/codemirror.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.codemirror/theme/ambiance.css&quot;&gt;
+  &lt;script src=&quot;js/jquery.codemirror/lib/codemirror.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/jquery.codemirror/mode/xml/xml.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/jquery.codemirror/mode/css/css.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/jquery.codemirror/mode/htmlmixed/htmlmixed.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;js/jquery.codemirror/addon/edit/matchbrackets.js&quot;&gt;&lt;/script&gt;</pre>
+
+  <h4>jPushMenu</h4>
+<p>This plugin can be found in all pages</p>
+<p>Visit the <a href="http://takien.github.io/jPushMenu/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.pushmenu/css/jPushMenu.css&quot; /&gt;
+&lt;script src=&quot;js/jquery.pushmenu/js/jPushMenu.js&quot;&gt;&lt;/script&gt;</pre>
+
+  <h4>Nifty Modals</h4>
+<p>This plugin can be found in UI modals</p>
+<p>Visit the <a href="http://wp-dreams.com/nifty-modal-window-effects-with-css3-and-jquery/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.niftymodals/css/component.css&quot; /&gt;  
+&lt;script src=&quot;js/jquery.niftymodals/js/jquery.modalEffects.js&quot;&gt;&lt;/script&gt;</pre>
+
+  <h4>Full Calendar</h4>
+<p>This plugin can be found in Calendar page</p>
+<p>Visit the <a href="http://arshaw.com/fullcalendar/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel='stylesheet' type='text/css' href='js/jquery.fullcalendar/fullcalendar/fullcalendar.css' /&gt;
+&lt;link rel='stylesheet' type='text/css' href='js/jquery.fullcalendar/fullcalendar/fullcalendar.print.css'  media='print' /&gt;
+&lt;script type='text/javascript' src='js/jquery.fullcalendar/fullcalendar/fullcalendar.js'&gt;&lt;/script&gt;</pre>
+
+  <h4>Date Range Picker</h4>
+<p>This plugin can be found in Form Elements</p>
+<p>Visit the <a href="https://github.com/dangrossman/bootstrap-daterangepicker">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/bootstrap.daterangepicker/daterangepicker-bs3.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.daterangepicker/moment.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.daterangepicker/daterangepicker.js&quot;&gt;&lt;/script&gt;</pre>
+
+  <h4>Color Picker</h4>
+<p>This plugin can be found in Form Elements</p>
+<p>Visit the <a href="https://github.com/mjolnic/bootstrap-colorpicker/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.js&quot;&gt;&lt;/script&gt;</pre>
+
+  <h4>Spinners</h4>
+<p>This plugin can be found in Form Elements</p>
+<p>Visit the <a href="https://github.com/istvan-ujjmeszaros/bootstrap-touchspin">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.touchspin/bootstrap-touchspin/bootstrap.touchspin.js&quot;&gt;&lt;/script&gt;</pre>
+
+  <h4>Jasny Extend</h4>
+<p>This plugin can be found in Form Elements</p>
+<p>Visit the <a href="http://jasny.github.io/bootstrap/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jasny.bootstrap/extend/css/jasny-bootstrap.min.css&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jasny.bootstrap/extend/js/jasny-bootstrap.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+  <h4>Multi Select</h4>
+<p>This plugin can be found in Form Multiselect</p>
+<p>Visit the <a href="https://github.com/davidstutz/bootstrap-multiselect">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/bootstrap.multiselect/css/bootstrap-multiselect.css&quot;/&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/bootstrap.multiselect/js/bootstrap-multiselect.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+  <h4>multiselect.js</h4>
+<p>This plugin can be found in Form Multiselect</p>
+<p>Visit the <a href="http://loudev.com">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.multiselect/css/multi-select.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.multiselect/js/jquery.multi-select.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.quicksearch/jquery.quicksearch.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+  <h4>X-Editable</h4>
+<p>This plugin can be found in Tables X-Editable</p>
+<p>Visit the <a href="http://vitalets.github.io/x-editable/">Official Documentation</a></p>
+<pre class="prettyprint linenums" >&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;js/jquery.x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css&quot; /&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;js/jquery.x-editable/src/inputs/combodate/lib/moment.min.js&quot;&gt;&lt;/script&gt;
+</pre>
+
+      <h1 id="ui-elements">UI Elements</h1>
+      <p id="ui-general">For almost all ui elements is the same bootstrap documentation and it can be found in <a href="http://getbootstrap.com/css">Bootstrap CSS</a> and <a href="http://getbootstrap.com/components">Bootstrap Components</a> docs. For elements which part of their structure have changes, here is their respective documentation.</p>
+
+      <h3 id="ui-alerts">Theme Alerts</h3>
+      <p>The theme alerts style structure changes just a little, you can change the alert icon (See <a href="#ui-icons">icons docs</a> section).</p>
+      <p>- To make rounded borders just put <code>.rounded</code> class in the main alert div container.</p>
+      <img src="docs_images/img6.png" />
+<pre class="prettyprint linenums" >&lt;div class=&quot;alert alert-success alert-white rounded&quot;&gt;
+  &lt;button data-dismiss=&quot;alert&quot; class=&quot;close&quot; type=&quot;button&quot;&gt;&times;&lt;/button&gt;
+  &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;icon-ok&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; The page has been added.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-info alert-white rounded&quot;&gt;
+  &lt;button data-dismiss=&quot;alert&quot; class=&quot;close&quot; type=&quot;button&quot;&gt;&times;&lt;/button&gt;
+  &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;icon-info-sign&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; The page has been added.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-warning alert-white rounded&quot;&gt;
+  &lt;button data-dismiss=&quot;alert&quot; class=&quot;close&quot; type=&quot;button&quot;&gt;&times;&lt;/button&gt;
+  &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;icon-warning-sign&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;strong&gt;Info!&lt;/strong&gt; The page has been added.
+&lt;/div&gt;
+
+&lt;div class=&quot;alert alert-danger alert-white rounded&quot;&gt;
+  &lt;button data-dismiss=&quot;alert&quot; class=&quot;close&quot; type=&quot;button&quot;&gt;&times;&lt;/button&gt;
+  &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;icon-remove-sign&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;strong&gt;Error!&lt;/strong&gt; The page has been added.
+&lt;/div&gt;</pre>
+  
+      <h3 id="ui-two-column-menu">Two Column Menu</h3>
+      <p>To make a Two Column Menu add <code>.col-menu-2</code>class to the <code>ul.dropdown-menu</code> main ul element, and divide the ul li elements in two divs with <code>.col-sm-6 .no-padding</code> classes:</p>
+      <img src="docs_images/img7.png" />
+<pre class="prettyprint linenums">
+&lt;ul class=&quot;dropdown-menu col-menu-2&quot;&gt;
+  &lt;div class=&quot;col-sm-6 no-padding&quot;&gt;
+    &lt;li class=&quot;dropdown-header&quot;&gt;&lt;i class=&quot;fa fa-#&quot;&gt;&lt;/i&gt;Menu Header&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 no-padding&quot;&gt;
+    &lt;li class=&quot;dropdown-header&quot;&gt;&lt;i class=&quot;fa fa-#&quot;&gt;&lt;/i&gt;Menu Header&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Menu Item&lt;/a&gt;&lt;/li&gt;
+  &lt;/div&gt;
+&lt;/ul&gt;</pre>  
+
+
+      <h3 id="ui-notifications">Gritter Notifications</h3>
+      <p>All Gritter Notification functionality can be found in their <a href="https://github.com/jboesch/Gritter">official docs</a>, however to make a theme styled notification you just add the <code>.clean</code> class via gritter plugin option: <code>class_name</code>.</p>
+      <img src="docs_images/img8.png" />
+<pre class="prettyprint linenums">
+$.gritter.add({
+  title: 'Title',
+  text: 'Content',
+  class_name: 'clean',//<--------- Here
+});</pre>
+
+      <h2 id="ui-buttons">Buttons</h2>
+      <p>Most of the buttons have the same bootstrap structure, and can be found in <a href="http://getbootstrap.com/css/#buttons">Bootstrap Buttons Docs</a>, for the rest:</p>
+      
+      <h3>Rounded corners</h3>
+      <p>Just add <code>".btn-rad"</code> class to the button.</p>
+      <img src="docs_images/img9.png" />
+      
+      <h3>Semi-transparent buttons</h3>
+      <p>Just add <code>".btn-transparent"</code> class to the button.</p>
+      <img src="docs_images/img10.png" />
+            
+      <h3>Social Buttons</h3>
+      <p>Here is the HTML code for social buttons examples in respective order:</p>
+      <img src="docs_images/img11.png" />
+      
+      
+<pre class="prettyprint linenums">
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-facebook&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-google-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-dribbble&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-flickr&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-youtube-play&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-pinterest&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-github&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-tumblr&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-default btn-facebook&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-facebook&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-twitter&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-google-plus&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-google-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-dribbble&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-dribbble&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-flickr&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-flickr&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-linkedin&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-youtube&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-youtube-play&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-pinterest&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-pinterest&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-github&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-github&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-tumblr&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-tumblr&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+
+&lt;button class=&quot;btn btn-default btn-facebook bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-facebook&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-twitter bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-google-plus bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-google-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-dribbble bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-dribbble&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-flickr bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-flickr&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-linkedin bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-linkedin&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-youtube bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-youtube-play&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-pinterest bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-pinterest&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-github bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-github&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button class=&quot;btn btn-default btn-tumblr bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-tumblr&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-sm btn-default btn-facebook bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-facebook&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm btn-default&quot; type=&quot;button&quot;&gt;Give Like&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-sm btn-default btn-twitter bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-twitter&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm btn-default&quot; type=&quot;button&quot;&gt;Follow Me&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-sm btn-default btn-google-plus bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-google-plus&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm btn-default&quot; type=&quot;button&quot;&gt;Plus One&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-sm btn-default btn-github bg&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;icon-github&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;button class=&quot;btn btn-sm btn-default&quot; type=&quot;button&quot;&gt;Fork&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+
+
+
+      <h3 id="ui-icons">Icons</h3>
+      <p>This template use two kinds of icons sets, <a href="http://getbootstrap.com/components/#glyphicons">Bootstrap</a> and <a href="http://fortawesome.github.io/Font-Awesome/examples/">Font Awesome 4</a> Icons, see the official documentation for more information.</p>
+      <img src="docs_images/img19.png" />
+      
+      <h3 id="ui-tabs-accordions">Tabs & Accordions</h3>
+      <p>For all tabs you have to create a tab container div <code>.tab-container</code> the rest is the same bootstrap tabs, for more info go to <a href="http://getbootstrap.com/javascript/#tabs">Bootstrap Tabs Docs</a>:</p>
+      <img src="docs_images/img12.png" />
+<pre class="prettyprint linenums">
+&lt;div class=&quot;tab-container&quot;&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#home&quot; data-toggle=&quot;tab&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#profile&quot; data-toggle=&quot;tab&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#messages&quot; data-toggle=&quot;tab&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+      <h3>Bottom Tabs</h3>
+      <p>For bottom tabs position add <code>.tab-bottom</code>class to the <code>.tab-container</code> div container, and put first the <code>.tab-content</code> div and next to it the tab navigation ul <code>.nav .nav-tabs</code> </p>
+      <img src="docs_images/img13.png" />
+ <pre class="prettyprint linenums">
+&lt;div class=&quot;tab-container tab-bottom&quot;&gt;
+  &lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div id=&quot;tab2-1&quot; class=&quot;tab-pane active&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;tab2-2&quot; class=&quot;tab-pane&quot;&gt;&lt;/div&gt;
+    &lt;div id=&quot;tab2-3&quot; class=&quot;tab-pane&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;nav nav-tabs&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#tab2-1&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#tab2-2&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#tab2-3&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;					
+&lt;/div&gt;</pre> 
+
+
+      <h3>Left Tabs</h3>
+      <p>For left tabs position add <code>.tab-left</code>class to the <code>.tab-container</code> div container, keep the same basic order for <code>.nav .nav-tabs</code> and <code>.tab-content</code>.</p>
+      <img src="docs_images/img14.png" />
+
+
+      <h3>Right Tabs</h3>
+      <p>For right tabs position add <code>.tab-right</code>class to the <code>.tab-container</code> div container, keep the same basic order for <code>.nav .nav-tabs</code> and <code>.tab-content</code>.</p>
+      <img src="docs_images/img15.png" />
+
+      <h3>Primary Color Accordion</h3>
+      <p>For primary color accordion style add <code>.accordion-color</code>class to the <code>.panel-group .accordion</code> div container, to see accordion documentation go to <a href="http://getbootstrap.com/javascript/#collapse">Bootstrap Collapse</a>.</p>
+      <img src="docs_images/img16.png" />
+ <pre class="prettyprint linenums">
+&lt;div class=&quot;panel-group accordion accordion-color&quot; id=&quot;accordion_id&quot;&gt;
+  &lt;!-- Accordion Elements --&gt;
+&lt;/div&gt;</pre>
+
+
+      <h3>Semi-Primary Accordion</h3>
+      <p>For primary color accordion style add <code>.accordion-semi</code>class to the <code>.panel-group .accordion</code> div container.</p>
+      <img src="docs_images/img17.png" />
+ <pre class="prettyprint linenums">
+&lt;div class=&quot;panel-group accordion accordion-semi&quot; id=&quot;accordion_id&quot;&gt;
+  &lt;!-- Accordion Elements --&gt;
+&lt;/div&gt;</pre>
+
+      <h4>Custom State Color</h4>
+      <p>For primary color accordion style add <code>.accordion-semi</code>class to the <code>.panel-group .accordion</code> div container and add the state color class to the <code>.panel-heading</code> div.</p>
+      <img src="docs_images/img18.png" />
+ <pre class="prettyprint linenums">
+&lt;div id=&quot;accordion4&quot; class=&quot;panel-group accordion accordion-semi&quot;&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading <strong>success</strong>&quot;&gt;&lt;!-- Head Title --&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel-collapse in&quot; id=&quot;ac4-1&quot;&gt;&lt;!-- Content --&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading <strong>warning</strong>&quot;&gt;&lt;!-- Head Title --&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse&quot; id=&quot;ac4-2&quot;&gt;&lt;!-- Content --&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading <strong>danger</strong>&quot;&gt;&lt;!-- Head Title --&gt;&lt;/div&gt;
+    &lt;div class=&quot;panel-collapse collapse&quot; id=&quot;ac4-3&quot;&gt;&lt;!-- Content --&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+
+
+      <h1 id="change-log">Change Log</h1>
+
+      <h4 id="log-1-0">Version 1.0 – 20 January 2014</h4>
+      <ul>
+        <li>Initial release</li>
+      </ul>
+      
+      <h4 id="log-1-1">Version 1.1 – 30 January 2014</h4>
+      <ul>
+        <li>Added: Calendar page</li>
+        <li>Added: Tour plugin</li>
+        <li>Added: Profile page</li>
+        <li>Added: Date range picker</li>
+        <li>Added: Color picker</li>
+        <li>Added: Spinners</li>
+        <li>Added: File Input</li>
+        <li>Added: Multi Select</li>
+        <li>Added: Form modals on bootstrap</li>
+        <li>Added: Sign Up page</li>
+        <li>Fixed: Minor bugs</li>
+      </ul>
+      
+      <h4 id="log-1-1-2">Version 1.1.2 – 12 February 2014</h4>
+      <ul>
+        <li>Updated: Bootstrap 3.1</li>
+        <li>Added: Layouts</li>
+        <li>Added: Media Lists</li>
+        <li>Added: Forgot Password Page</li>
+        <li>Added: Search Page</li>
+        <li>Added: Chat Box</li>
+        <li>Added: Porlets Actions</li>
+        <li>Added: Clean Tiles</li>
+        <li>Fixed: Minor bugs</li>
+      </ul>
+      
+      <h4 id="log-1-1-3">Version 1.1.3 – 22 February 2014</h4>
+      <ul>
+        <li>Added: Boxed Multi-select</li>
+        <li>Added: Editable DataTables</li>
+        <li>Added: X-Editable Table</li>
+        <li>Added: Blanck Aside Header Page</li>
+        <li>Fixed: Minor bugs</li>
+      </ul>
+      
+      <h4 id="log-1-1-4">Version 1.1.4 – 29 April 2014</h4>
+      <ul>
+        <li>Added: Email Compose Page</li>
+        <li>Updated: Parsley 2.0</li>
+        <li>Updated: Bootstrap Switch 3</li>
+        <li>Fixed: Wizard Responsive</li>
+        <li>Fixed: Minos bugs</li>
+      </ul>
+      
+      <h4 id="log-1-1-5">Version 1.1.5 – 17 June 2014</h4>
+      <ul>
+        <li>Fixed: Minos bugs</li>
+      </ul>
+      
+      <h4 id="log-1-1-5">Version 1.1.6 – 24 March 2015</h4>
+      <ul>
+        <li>Added: Multilevel Menu Sidebar</li>
+        <p>Note: Update the <code>"core.js"</code> and the <code>CSS files</code></p>
+      </ul>
+      
+
+  <!-- END OF DOCUMENTATION-->
+      
+      
+      </div>
+     
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js"></script>
+	</body>
+</html>

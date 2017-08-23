@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>WorkScout WordPress Theme Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation of WorkScout WordPress Theme">
+    <meta name="author" content="Purethemes.net">
+
+    <!-- loading the css -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <style type="text/css">
+    body {
+        padding-bottom: 40px;
+    }
+    section {
+        padding: 60px 0 0 0;
+    }
+    </style>
+
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+          <![endif]-->
+
+          <!-- Various Icons (Favicon, Touch Icon,... -->
+      </head>
+
+
+     <body data-spy="scroll" data-target=".navbar" id="top">
+
+        <!-- ========================= NAVIGATION BAR >> START ========================= -->
+        <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                    <a class="brand" href="#overview">WorkScout Documentation</a><!-- TIP: Change this for the name of your file -->
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop1">Getting started<b class="caret"></b></a>
+                                <ul aria-labelledby="drop1" role="menu" class="dropdown-menu">
+                                    <li><a href="#getting_started">Getting Started</a></li>
+                                    <li><a href="#getting_started_installation">Theme Installation</a></li>
+                                    <li><a href="#getting_started_plugins_installation">Required Plugins Installation</a></li>
+                                    <li><a href="#getting_started_importing_demo_contet">Importing Demo Contet</a></li>
+                                    <li><a href="#getting_started_setting_up_the_menu">Setting up the menu</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop2" href="#creating_content_post_pages_and_portfolio">Creating Content<b class="caret"></b></a>
+                                <ul aria-labelledby="drop2" role="menu" class="dropdown-menu">
+                                    <li><a href="">Create Homepage</a></li>
+                                    <li><a href="">Setup Blog</a></li>
+                                    <li><a href="">Create Jobs Page</a></li>
+                                    <li><a href="">Create Resumes Page</a></li>
+                                    <li><a href="">Create a Login\Register Page</a></li>
+                                    <li><a href="">Create the Job Submission Page</a></li>
+                                    <li><a href="">Create the Job Dashboard</a></li>
+                                    <li><a href="">Create a Pricing Page</a></li>
+                                    <li><a href="">Create a Candidates Dashboard</a></li>
+                                    <li><a href="">Create a Resume Submission Page</a></li>
+                                    <li><a href="#contact_page">Contact Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop3" href="#features">Features<b class="caret"></b></a>
+                                <ul  aria-labelledby="drop3" role="menu" class="dropdown-menu">
+                                    <li><a href="#plugins">Plugins</a></li>
+                                    <li><a href="#shortcodes_widgets">Shortcodes</a></li>
+                                    <li><a href="#widgets">Widgets</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a data-toggle="dropdown" class="dropdown-toggle" role="button" href="#" id="drop3" href="#customization">Customization<b class="caret"></b></a>
+                                <ul aria-labelledby="drop3" role="menu" class="dropdown-menu">
+                                    <li><a href="#theme_options">Theme Options</a></li>
+                                    <li><a href="#theme_customizer">Theme Customizer</a></li>
+                                    <li><a href="#translation_and_customization">Translation</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ========================= NAVIGATION BAR >> END ========================= -->
+
+
+
+        <!-- ========================= MAIN CONTAINER >> START ========================= -->
+        <div class="container">
+            <!-- ========================= SECTION: OVERVIEW >> START ========================= -->
+            <section id="overview">
+
+                <div class="hero-unit">
+                    <h1>WorkScout</h1>
+                    <h5>WorkScout Documentation</h5>
+                    <p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form on <a href="http://themeforest.net/user/purethemes">themeforest.net/user/purethemes</a>.Thanks so much! </p>
+                    <div class="row-fluid">
+                        <div class="span6"><a href="#changelog" role="button" class="btn btn-success btn-large btn-block" data-toggle="modal">Changelog</a></div>
+                        <div class="span6"><a href="#credits" role="button" class="btn btn-info btn-large btn-block" data-toggle="modal">Credits</a></div>
+                    </div>
+                </div>
+
+                <hr>
+
+              
+
+            </section>
+            <!-- ========================= SECTION: OVERVIEW >> END ========================= -->
+
+            <div class="alert alert-info">
+                <h4>This documentation in latest version is always available on <a href="http://docs.purethemes.net/workscout">docs.purethemes.net/workscout</a></h4>
+            </div>
+
+            <!-- ========================= SECTION: MARKUP >> START ========================= -->
+            <section id="getting_started">
+                <div class="page-header">
+                    <h1>Getting started</h1>
+                </div>
+
+                <p>I assume you have your own WordPress installation, so let&#39;s get started!</p>
+                <hr />
+
+                <h3 id="getting_started_installation">Installation</h3>
+                <p>
+                    You can do it in two ways:
+                </p>
+                <ol>
+                    <li>
+                        <h5>FTP Upload:</h5>
+                        <ul>
+                            <li>Extract the <strong>&ldquo;workscout.zip&rdquo;</strong></li>
+                            <li>Open up your FTP manager and connect to your hosting</li>
+                            <li>Browse to wp-content/themes</li>
+                            <li>Upload the <strong>workscout</strong> theme folder.</li>
+                            <li>Log Into WordPress and go to Appearance - Themes</li>
+                            <li>Find the WorkScout and click activate</li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <h5>WordPress Upload</h5>
+                        <ul>
+                            <li>
+                                <p>
+                                    Download the <strong>&ldquo;Installable WordPress file only&rdquo;</strong>
+                                    you'll find it here
+                                    <img src="images/downloads.jpg" class="img-polaroid" alt="">
+                                </p>
+                            </li>
+                            <li>Navigate to <a class="btn btn-small disabled" href="#"><i class="icon-home"></i></a> Appearance <i class=" icon-chevron-right"></i> Add New Themes <i class=" icon-chevron-right"></i> Upload.</li>
+                            <li>Follow the instructions on the screen,  select the downloaded theme folder (<strong>&ldquo;workscout.zip&rdquo;</strong>).</li>
+                            <li>Hit <a class="btn btn-mini btn-primary disabled">Install Now</a> and the theme will be uploaded and installed.</li>
+                        </ul>
+
+                    </li>
+                </ol>
+
+                <p>
+                    Once the theme is uploaded, you need to activate it. Go to <a class="btn btn-small disabled" href="#"><i class="icon-home"></i></a> Appearance <i class=" icon-chevron-right"></i> Themes and activate WorkScout.<br><br>
+                    &nbsp;
+                    <img src="images/activate.png" alt=""><br><br>
+                    &nbsp;
+                </p>
+                <div class="row">
+                    <div class="span3">
+                        <h5>Plugins installation - step I</h5>
+                        <p>If installation was successful, you'll see a notice about required plugins for WorkScout, to proceed click
+                            <strong>"Begin installing plugins"</strong></p>
+                    </div>
+                    <div class="span9"><img  class="img-polaroid" src="images/pluginsnotice.png" alt=""></div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="span3">
+                        <h5>Plugins installation - step II</h5>
+                        <p>You'll see a list of plugins, select all and choose Install, if everything will go OK, you'll be moved to the Plugins menu in wp-admin, all new plugins should be activated</p>
+                        <p>If plugins won't be activated, go to Appearance -> Install Plugins and activate them again from that list</p>
+                        <p>If you have installed required plugins and don't need anything else, just click <strong>Dismiss this notice</strong></p>
+                    </div>
+                    <div class="span9"><img  class="img-polaroid" src="images/plugins.png" alt=""></div>
+                </div>
+                <br><br>
+                    &nbsp;<br><br>
+                    &nbsp;
+                <h3>WP Job Manager Core Add-on Bundle</h3>
+                <p>WorkScout demo shows various functionality like Resumes, Applications, Job Bookmarks etc. The basic job listing and submision is done using free plugin WP Job Manager, however, all other functionality is available by using paid WP Job Manager add-ons . You can currently buy a <a href="https://wpjobmanager.com/add-ons/bundle/">"Core Add-on Bundle"</a> for 125$ which will give you this list of plugins:
+                </p>
+                <ol>
+                    <li>Resume Manager</li>
+                    <li>Job Alerts</li>
+                    <li>Indeed Integration</li>
+                    <li>Job Tags</li>
+                    <li>WC Paid Listings</li>
+                    <li>Simple Paid Listings</li>
+                    <li>Application Deadline</li>
+                    <li>Bookmarks</li>
+                    <li>Apply with XING</li>
+                    <li>Job Applications</li>
+                    <li>Embeddable Job Widget</li>
+                    <li>CareerBuilder Integration</li>
+                    <li>Apply with Facebook</li>
+                </ol>
+                <div class="alert alert-info">
+                <p>All of this plugins are supported by WorkScout.If you'd like to import full demo content, you should buy and install all those plugins before doing this.</p>
+                </div>
+                <div class="row">
+                    <div class="span3">
+                        <h3>WP Job Manager Setup</h3>
+                        <p>After activating WP Job Manager (and some other plugins from Core Add-on Bundle) you might see a setup screen.</p>
+                        <p>If you're planing to import the demo content and use it as a base to your website, press the "Skip setup" button, if you want to set your page from scratch, follow the setup steps</p>
+                    </div>
+                      <div class="span9"><img  class="img-polaroid" src="images/wpjobmanagersetup.png" alt=""></div>
+                </div>
+
+                <hr />
+               
+             
+
+                <div class="page-header"><h3 id="getting_started_importing_demo_contet">Importing Demo Content</h3></div>
+                <p>
+                    If you have the Core Add-on Bundle purchased and installed, there are few thing you need to enable first to import all of the content.
+                </p>
+                <p>In Job Listing -> Settings, select "Enable categories for listings" and Save</p>
+                <p>In Resumes -> Settings, select "Enable resume categories" and "Enable resume skills", click Save</p>
+                
+                <p>
+                    If you want to have the same content on your website as Live Preview of WorkScout theme, you&#39;ll need to import demo content. To do that please go to <a class="btn btn-small disabled" href="#"><i class="icon-home"></i></a> Tools <i class=" icon-chevron-right"></i> Import <i class=" icon-chevron-right"></i> WordPress, install plugin you&#39;ll see and than select file &quot;extras/import.xml&quot;.
+                    You'll find it in <strong>"All files & documentation"</strong> <br/>
+                </p>
+                <img src="images/downloads.jpg" class="img-polaroid" alt="">
+               
+                <p class="text-info"><span class="label label-info">Notice</span>
+                    All photos included with import file are just plain gray color, as they are copyrighted files purchased on Stock sites and cannot be included in the package.
+                </p>
+                <p>
+                    If your import was successful, please go to <a class="btn btn-small disabled" href="#"><i class="icon-home"></i></a>
+                    Appearance <i class=" icon-chevron-right"></i> Menus and in <strong>Manage Locations</strong> and for 'Primary Menu' choose "Menu", than save.
+                </p>
+                <p>
+                    Now let's import widgets. To do that, install plugin <a href="https://wordpress.org/plugins/widget-importer-exporter/">Widget Importer/Exporter</a> and after successful activation of the plugin, go to Tools
+                </p>
+                <p>
+                    Next, you should setup your permalinks to look pretty. You can go to <a class="btn btn-small disabled" href="#"><i class="icon-home"></i></a> Settings <i class=" icon-chevron-right"></i> Permalinks, choose the Custom Structure, and use this:<code> /%category%/%postname%/</code>
+                </p>
+                <p>
+                    Last thing - in <a class="btn btn-small disabled" href="#"><i class="icon-home"></i></a> Settings <i class=" icon-chevron-right"></i> Reading, set Front Page Display like on this screen-shot:
+                </p>
+                <img src="images/frontpage.png" class="img-polaroid" alt="">
+
+
+                <h3>Setting Up Plugins Pages</h3>
+                <p>If you've installed all core plugins, and imported demo setting, now the last thing to do is to setup pages</p>
+                 <hr />
+               
+                <div class="row">
+                    <div class="span3">
+                        <p>In Job Listing -> Settings</p>
+                    </div>
+                    <div class="span9">
+                        <img src="images/jobpages.png" class="img-polaroid" alt="">
+                    </div>
+                </div>   
+ <hr />
+               
+                <div class="row">
+                    <div class="span3">
+                        <p>In Resumes -> Settings</p>
+                    </div>
+                    <div class="span9">
+                        <img src="images/resumepages.png" class="img-polaroid" alt="">
+                    </div>
+                </div>
+ <hr />
+                <div class="row">
+                    <div class="span3">
+                        <p>In Appearance -> Theme Options</p>
+                    </div>
+                    <div class="span9">
+                        <img src="images/themepages.png" class="img-polaroid" alt="">
+                    </div>
+                </div>
+        
+<!-- revolution -->
+      
+
+
+
+              <!-- ========================= SECTION: MARKUP >> END ========================= -->
+
+
+              <section id="creating_content_post_pages_and_portfolio">
+                <div class="page-header">
+                    <h1>Creating Content<small> Post, Pages, Jobs, Resumes </small></h1>
+                </div>
+                <div id="creating_content_post" class="page-header"><h2>Post</h2></div>
+                <p>
+                    Creating posts is nothing special if you have even basic experience with WordPress. 
+                    WorkScout theme offers couple of additional options in Post editor.
+                </p>
+                <div class="row">
+                
+                    <div class="span12">
+                        <h5>Post types</h5>
+                        <p>
+                            WorkScout supports for posts formats. You can change it in right side box. Default is Standard - that one shows only text of post and thumbnail image if added. Each change will show a form with options to fill. For Video, just put there a link to a video from youtube, vimeo, or any other service that has support for oEmbed.
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    Below Editor you&#39;ll see <strong>Layout </strong>box and<strong> Post options</strong> box.
+                </p>
+                <div class="row">
+                  <div class="span12">
+                        <div class="page-header"><img src="images/posts.png" /></div>
+                   
+                        <h5>Layout</h5>
+                        <p>
+                            Layout gives you ability to select sidebar to display with post or page, and also select layout of post - you can put sidebar on left or right side.
+                        </p>
+                        <h5>Sidebar</h5>
+                        <p>
+                            You can create more sidebars in Theme Options in Sidebars section. Just follow instruction there. After that you will be able to add Widgets to them  in Appearance -> Widgets, and that way create
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    If you want to use shortcodes in post content, you need to write the <strong>excerpt</strong> or you might see non parsed shortcodes in search results or in front page. 
+                </p>
+
+
+
+
+                <div class="page-header">
+                    <h3 id="creating_content_pages">Pages</h3>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        <div class="page-header"><img src="images/pages.png" /></div>
+                    </div>
+                    <div class="span6">
+                        <h5>Job header background</h5>
+                        <p>You can add background to the page title section on some pages and single job listings</p>
+                        <h5>Layout box</h5>
+                        <p>
+                            Layout box gives you ability to select sidebar to display with post or page, and also select layout of post - you can put sidebar on left or right side, or just show full-width content. Full width is default.
+                        </p>
+                        <h5>Sidebar</h5>
+                        <p>
+                            You can create more sidebars in Theme Options in Sidebars section. Just follow instruction there. After that you will be able to add Widgets to them  in Appearance -> Widgets, and that way create
+                        </p>
+                        <h5>Slider</h5>
+                        <p>
+                            If you'll change your Page Template to "Page with Slider", you can select here which slider will be displayed
+                        </p>
+                    </div>
+                </div>   
+
+
+
+                <div class="page-header">
+                    <h3 id="creating_content_jobs">Jobs</h3>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        <div class="page-header"><img src="images/jobs.png" /></div>
+                    </div>
+                    <div class="span6">
+                        <h5>Job data</h5>
+                        <p>Most of those fields are default fields from WP Job Manager, however there are 6 fields added by WorkScout, all are optional, so you don't have to fill them</p>
+
+                        <ul>
+                            <li><strong>Salary min</strong> You can set a range of salary you want to offer in a job, if you don't want to set maximum, set just a minimum</li>
+                            <li><strong>Salary max</strong></li>
+
+                            <li><strong>Rate/h min</strong>You can set a range of rate per hour you want to offer in a job, if you don't want to set maximum, set just a minimum</li>
+                            <li><strong>Rate/h max</strong></li>
+                            <li><strong>Hours per weak</strong> if it's not full-time job, you can set here how many hours it will take</li>
+                        </ul>
+                        
+                    </div>
+                </div>    
+                <div class="page-header">
+                    <h3 id="creating_content_resumes">Resumes</h3>
+                </div>
+                <div class="row">
+                    <div class="span6">
+                        <div class="page-header"><img src="images/resumes.png" /></div>
+                    </div>
+                    <div class="span6">
+                        <h5>Resume data</h5>
+                        <p>Most of those fields are default fields from WP Job Manager, however there is also rate per hour added by WorkScout - useful if you want to make a "freelance" section with resumes.</p>
+                    </div>
+                </div>   
+
+                </section>
+                 <section id="contact_page">
+                        <div class="page-header"><h3>Contact Page</h3></div>
+                        <p>You should use <a href="http://wordpress.org/extend/plugins/contact-form-7/">contact form 7</a> plugin for contact form.
+                                    After installing it, go to Contact - Add new (or edit current one) and in Form field paste what's below:</p>
+                                    <pre class="prettyprint html">
+                                    
+&lt;fieldset>
+&lt;div>&lt;label>Name&lt;/label>[text* your-name] &lt;/div>
+&lt;div>&lt;label>Email&lt;span>*&lt;/span>&lt;/label>[email* your-email] &lt;/div>
+&lt;div>&lt;label>Message&lt;span>*&lt;/span>:&lt;/label>[textarea your-message] &lt;/div>
+&lt;/fieldset>
+
+[submit "Send"]
+&lt;div class="clear">&lt;/div>
+                                    </pre>
+                                    <p>Than at the top of page you'll see shortcode, for example <strong>(it will be different on your website)</strong>:
+                                    <pre class="prettyprint html">[contact-form-7 id="503" title="Contact form 1"] </pre>
+                                    Use it on a page you want to have contact form. The contact page should use Page Template named "Contact Page". To add points to the map, go to Appearance -> Theme Options -> Contact Page -> Add New </p>
+
+                                </section>
+                <section id="plugins">
+                    <div class="page-header">
+                        <h1 id="plugins">Plugins<small> Configuration</small></h1>
+                    </div>
+                </section>
+
+                <p>Here's some short info about basic plugins you can and need to use in WorkScout.</p>
+
+            
+                <div class="page-header">
+                    <h3>Purethemes.net Shortcodes <small>Required plugin</small></h3>
+                </div>
+                <p>
+                    This will add new icon to your TinyMCe editor (the one you use to edit posts and pages) that will open a box with shortcode generator.
+                </p>     
+
+                <div class="page-header">
+                    <h3>Web Fonts Social Icons WP <small>Recommended plugin</small></h3>
+                </div>
+                <p>
+                    Adds a widget and shortcode  with icons from popular social sites. Example <a href="http://workscout.purethe.me/shortcodes/">here</a>
+                </p>
+
+                <div class="page-header">
+                    <h3>WP-PageNavi <small>Optional plugin</small></h3>
+                </div>
+                <p>
+                    This will replace standard "next/prev" page buttons with pagination list.
+                </p> 
+
+               
+                <div class="clear" style="clear:both"></div>
+
+                <section id="shortcodes_widgets">
+                    <div class="page-header">
+                        <h1 id="shortcodes">Shortcodes & Widgets<small> Configuration</small></h1>
+                    </div>
+                    <ul>
+                        <li><a href="#clear">[clear]</a></li>
+                        <li><a href="#icon">[icon]</a></li>
+                        <li><a href="#space">[space]</a></li>
+                        <li><a href="#highlight">[highlight]</a></li>
+                        <li><a href="#button">[button]</a></li>
+                        <li><a href="#dropcap">[dropcap]</a></li>
+                        <li><a href="#popup">[popup]</a></li>
+                        <li><a href="#list">[list]</a></li>
+                        <li><a href="#box_job_categories">[box_job_categories]</a></li>
+                        <li><a href="#headline">[headline]</a></li>
+                        <li><a href="#jobs">[jobs]</a></li>
+                        <li><a href="#spotlight_jobs">[spotlight_jobs]</a></li>
+                        <li><a href="#testimonials_wide">[testimonials_wide]</a></li>
+                        <li><a href="#actionbox">[actionbox]</a></li>
+                        <li><a href="#centered_headline">[centered_headline]</a></li>
+                        <li><a href="#clients_carousel">[clients_carousel]</a></li>
+                        <li><a href="#column">[column]</a></li>
+                        <li><a href="#latest_from_blog">[latest_from_blog]</a></li><li><a href="#jobs_categories">[jobs_categories]</a></li>
+                         <li><a href="#box">[box]</a></li>
+                         <li><a href="#infobanner">[infobanner]</a></li>
+                         <li><a href="#counters">[counters]</a></li>
+                         <li><a href="#counter">[counter]</a></li>
+
+                        <li><a href="#pricing_table">[pricing_table]</a></li>
+                        <li><a href="#pricing_woo_tables">[pricing_woo_tables]</a></li>
+                        <li><a href="#tab">[tab]</a></li>
+                        <li><a href="#accordion">[accordion]</a></li>
+
+                    </ul>
+                    <p>
+                        <em><strong>WorkScout</strong></em> has many shortcodes which will help you to build awesome layouts. There's also Visual Composer included, which will allow you to build your pages with easy drag and drop tool.
+                    </p>
+
+                    <p>
+                        Here is list of all shortcodes:
+                    </p>
+
+                    <div id="cler"  class="page-header" id="clear"><h3>Clear shortcode:</h3></div>
+                    <div class="row">
+                        <div class="span4">
+                            <pre class="prettyprint html">[clear]</pre>
+                        </div>
+                        <div class="span8">
+                            <p>
+                                Empty div with clearfix, use after floated elements
+                            </p>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="page-header"><h3>Space shortcode:</h3></div>
+                    <div class="row">
+                        <div class="span4">
+                            <pre class="prettyprint html">[space class="margin-top-30"]</pre>
+                        </div>
+                        <div class="span8">
+                            <p>
+                                This works like [clear] shortcode but allows you to add custom class, for example to make some whitespace. There are couple class available, margin-top-xx, margin-bottom-xx where xx can be number 0,10,15,20,25,30,35,40,45 or 50
+                            </p>
+                        </div>
+                    </div>   
+
+                    <div id="icon" class="page-header"><h3>Icon shortcodes:</h3></div>
+                    <div class="row">
+                        <div class="span4">
+                            <pre class="prettyprint html">[icon icon="book"]</pre>
+                        </div>
+                        <div class="span8">
+                            <p>
+                                This will add one of icons from <a href="http://fortawesome.github.io/Font-Awesome/">Font Awesome pack</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="highlight" class="page-header"><h3>Highlight shortcodes:</h3></div>
+                    <div class="row">
+                        <div class="span4">
+                            <pre class="prettyprint html">[highlight style=""] text [highlight]</pre>
+                        </div>
+                        <div class="span8">
+                            <img src="images/highlight.png" alt="">
+                            <p>
+                                This will highlight wrapped text.
+                            </p>
+                            <strong>Options</strong>
+                            <ul>
+                                <li><strong>style</strong> "color" (default), "gray", "light"</li>
+                           </ul>
+                        </div>
+                    </div>
+
+                    <div id="button" class="page-header"><h3>Button shortcode:</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[button color=&quot;green&quot; url=&quot;#&quot; icon=&quot;icon-ok&quot; iconcolor=&quot;white&quot;] Text [/button]
+                            </pre>
+                        </div>
+                         <div class="span6">
+                            <strong>Options</strong>
+                            <ul>
+                                <li><strong>url</strong> link</li>
+                                <li><strong>color</strong> "color" (default), "gray", "dark"</li>
+                                <li><strong>customcolor</strong> "#000000" (any color hash) </li>
+                                <li><strong>iconcolor</strong> "white","black"</li>
+                                <li><strong>icon</strong> Font Awesome icon name </li>
+                                <li><strong>target</strong> "_blank"</li>
+                                <li><strong>customclass</strong></li>
+                            </ul>
+                         </div>
+                    </div>
+
+                    <div id="dropcap" class="page-header"><h3>Dropcap shortcode:</h3></div>
+                    <div class="row">
+                        <div class="span4">
+                            <pre class="prettyprint html">[dropcap type=""] A[/dropcap]</pre>
+                        </div>
+                        <div class="span8">
+                            <p>
+                                Make first letter of paragraph larger than the rest of the text. As "type" you can use also 'full'.
+                            </p>
+                        </div>
+                    </div>
+
+                   <div id="popup" class="page-header"><h3>Popup shortcode:</h3></div>
+                    <div class="row">
+                        <div class="span4">
+                            <pre class="prettyprint html">[popup buttontext="Open Popup" title="Modal Popup"]Content of Popup[/popup]</pre>
+                        </div>
+                        <div class="span8">
+                            <p>
+                               Open a text added between the tags in the nicely styled popup window
+                            </p>
+                           <strong>Options</strong>
+                            <ul>
+                                <li><strong>buttontext</strong> text to show on button that displays popup</li>
+                                <li><strong>title</strong> title of modal box area</li>
+                                </ul>
+                        </div>
+                    </div>
+
+                     <div class="page-header"><h3>List styles</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[list style=1 color="yes"]
+&lt;ul>
+&lt;li> list item &lt;/li>
+&lt;li> list item &lt;/li>
+&lt;/ul>
+[/list]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                           <strong>Options</strong>
+                           <ul>
+                            <li><strong>style</strong> 1 | 2 | 3 | 4</li>
+                            <li><strong>color</strong> yes | no</li>
+                            </ul>
+                            <p>Use it to replace boring list bullets with nice icons</p>
+                        </div>
+                    </div>
+
+
+                    <div class="page-header"><h3>Box job categories</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[box_job_categories]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                           <strong>Options</strong>
+                           <ul>
+                            <li><strong>hide_empty</strong> Whether to not return empty $terms.
+1 (true) - Default (i.e. Do not show empty terms)
+0 (false)</li>
+                            <li><strong>orderby</strong> id, count, name - Default, slug, term_group - Not fully implemented (avoid using), none</li>
+                            <li><strong>order</strong>ASC - Default,DESC </li>
+                            <li><strong>number</strong>The maximum number of terms to return.  </li>
+                            <li><strong>browse_link</strong> adds button with link to Browse Categories page - pass URL as value </li>
+                            <li><strong>include</strong> term ids to include, use coma to separate. Empty returns all. </li>
+                            <li><strong>exclude</strong> term ids to exclude, use coma to separate.</li>
+                            <li><strong>child_of</strong> Get all descendents of this job category. Default is 0. Note: child_of gets all descendants (as many levels as are available)</li>
+                            </ul>
+                            <p>Use it to replace boring list bullets with nice icons</p>
+                        </div>
+                    </div>
+
+                    <div id="headline" class="page-header"><h3>Headline shortcodes:</h3></div>
+                    <div class="row">
+                        <div class="span4">
+                            <pre class="prettyprint html">[headline margintop="0" marginbottom="25" clearfix="0" type="h3"] Header [headline]</pre>
+                        </div>
+                        <div class="span8">
+                            <p>
+                                Just a simple header with margin class.
+                            </p>
+                            <strong>Options</strong>
+                            <ul>
+                                <li><strong>margintop</strong> 0,10,15,20,25,30,35,40,45 or 50</li> 
+                                <li><strong>marginbottom</strong> 0,10,15,20,25,30,35,40,45 or 50</li>
+                                <li><strong>clearfix</strong> 0 | 1 ; 1 ads clearfix after header</li>
+                                <li><strong>type</strong> h1, | h2 | h3 | h4 | h5 - choose header type, default is h3</li>
+                           </ul>
+                        </div>
+                    </div>
+
+
+                     <div id="jobs" class="page-header"><h3>Jobs listing shortcode</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[jobs]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                           <strong>Options</strong>
+                           <ul>
+                            <li><strong>per_page</strong> how many items show per page</li>
+                            <li><strong>orderby</strong> id, count, name - Default, slug, term_group - Not fully implemented (avoid using), none</li>
+                            <li><strong>order</strong>ASC - Default,DESC </li>
+                            <li><strong>show_filters</strong> true | false - show filter section</li>
+                            <li><strong>show_categories</strong> true | false - show categories in filters</li>
+                            <li><strong>show_category_multiselect</strong>true | false</li>
+                            <li><strong>show_pagination</strong>true | false</li>
+                            <li><strong>show_more</strong>true | false</li>
+                            <li><strong>show_description</strong>true | false - if false shows just a title of job and basic values.</li>
+                            <li><strong>categories</strong> show results just form specific category</li>
+                            <li><strong>job_types</strong>how results just form specific job types</li>
+                            <li><strong>featured</strong>True to show only featured, false to hide featured, leave null to show both.</li>
+                            <li><strong>filled</strong>True to show only filled, false to hide filled, leave null to show both/use the settings.</li>
+                            <li><strong>location</strong>Show jobs from specific locations</li>
+                            <li><strong>filled</strong></li>
+                            <li><strong>keywords</strong></li>
+                            <li><strong>selected_category</strong></li>
+                            <li><strong>selected_job_types</strong></li>
+                            </ul>
+                            <p>Shows the list of all jobs added via WP Job Manager</p>
+                        </div>
+                    </div>
+
+
+
+                    <div id="spotlight_jobs" class="page-header"><h3>Spotlight Jobs</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[spotlight_jobs]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                           <strong>Options</strong>
+                           <ul>
+                            <li><strong>per_page</strong> how many items show per page</li>
+                            <li><strong>orderby</strong> id, count, name - Default, slug, term_group - Not fully implemented (avoid using), none</li>
+                            <li><strong>order</strong>ASC - Default,DESC </li>
+                            <li><strong>title</strong> Title of the section</li>
+                           
+                            <li><strong>categories</strong> show results just form specific category</li>
+                            <li><strong>job_types</strong>how results just form specific job types</li>
+                            <li><strong>featured</strong>True to show only featured, false to hide featured, leave null to show both.</li>
+                            <li><strong>filled</strong>True to show only filled, false to hide filled, leave null to show both/use the settings.</li>
+                            
+                            </ul>
+                            <p>Shows the list of all jobs added via WP Job Manager</p>
+                        </div>
+                    </div>
+
+
+                    <div id="testimonials_wide" class="page-header"><h3>Testimonials fullwidth</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[testimonials_wide]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                           <strong>Options</strong>
+                           <ul>
+                            <li><strong>per_page</strong> how many items show per page</li>
+                            <li><strong>orderby</strong> id, count, name - Default, slug, term_group - Not fully implemented (avoid using), none</li>
+                            <li><strong>order</strong>ASC - Default,DESC </li>  
+                            <li><strong>exclude_posts</strong>id of testimonials you want to exclude</li>  
+                            <li><strong>include_posts</strong>id of testimonials you want to include - if not specified</li>  
+                            <li><strong>background</strong>url to image that acts as a background for this section, should be around 1900x700px </li>
+                           
+                      
+                            </ul>
+                            <p>Shows the carousel with testimonials added in wp-admin -> Testimonials</p>
+                        </div>
+                    </div>
+
+
+                    <div id="actionbox" class="page-header"><h3>Action box</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[actionbox wide="true" title="Start Building Your Own Job Board Now" url="#" buttontext="Do Action"]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                           <strong>Options</strong>
+                           <ul>
+                            <li><strong>wide</strong> set actionbox to be full screen wide, or page wide</li>
+                            <li><strong>title</strong> Title of the section</li>
+                            <li><strong>url</strong> optional link for the button</li>
+                            <li><strong>buttontext</strong> caption for optional button</li>
+                        </ul>
+                            <p>Shows the call to action box element</p>
+                        </div>
+                    </div>                    
+
+                    <div id="actionbox" class="page-header"><h3>Centered headline</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[centered_headline wide="true" title="Start Building Your Own Job Board Now" url="#" subtitle="Do Action"]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                           <strong>Options</strong>
+                           <ul>
+                            <li><strong>wide</strong> set actionbox to be full screen wide, or page wide</li>
+                            <li><strong>title</strong> Title of the section</li>
+                            <li><strong>url</strong> optional link for the button</li>
+                            <li><strong>subtitle</strong> subtitle</li>
+                        </ul>
+                            <p>Shows the call to action headline element</p>
+                        </div>
+                    </div>
+
+                    <div class="page-header"><h3>Columns shortcodes:</h3></div>
+                    <p>
+                        <em><strong>WorkScout</strong></em> is based on modified Skeletons grid - Full width page has 16 columns, if it&#39;s page with sidebar it has 16 columns. Using columns shortcodes you can build your own layouts.
+                    </p>
+                    <p>
+                        The important part of columns shortcode except the width is place. You have 3 options here - <em>first</em>, <em>none </em>or <em>last</em>. If <em>last </em>is used, it&#39;s assumed that this column is last in current row and floats will be cleared. <em>First&nbsp; </em>will set margin-left to 0px. If you have more than two columns you might want to use also <em>place=&quot;center&quot;</em> - it will set margin left and margin right to 0px. It&#39;s good to try different parameters to find out what looks the best in specific situation.
+                    </p>
+
+                    <hr/>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[column width=&quot;one-third&quot; place=&quot;first&quot; ] Put here content [/column] [column width=&quot;two-thirds&quot; place=&quot;last&quot; ] Put here content[/column]
+                            </pre>
+                        </div>
+
+                        <div class="span6">
+                            <strong>Options</strong>
+                            <ul>
+                                <li><strong>width</strong> "1/3", "2/3", "sixteen" (default), "fifteen", "fourteen", (..), "two", "one"</li>
+                                <li><strong>place</strong> "first" (default), "center", "last", "none"</li>
+                                <li><strong>custom_class</strong> just adds custom class to the container div, handy if you want to style something in different way</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p>
+                        You can use other shortcodes in columns.
+                    </p>
+
+
+                    
+
+                    <div class="page-header"><h3>Accordion shortcode:</h3></div>
+                    <p>It need's to be wrapped with [accordionwrap] shortcode</p>
+                    <pre class="prettyprint html">
+[accordionwrap] [accordion title=&quot;Accordion#1&quot;] Lorem ipsum dolor sit amet, consectetur adipiscing elit tortor libero sodales leo, eget blandit nunc tortor eu nibh. Aenean nisl orci lorem, condiment ultrices consequat eu lorem ipsum dolor sit amet inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo dolor sit amet.[/accordion][accordion title=&quot;Accordion#1&quot;] Lorem ipsum dolor sit amet, consectetur adipiscing elit tortor libero sodales leo, eget blandit nunc tortor eu nibh. Aenean nisl orci lorem, [/accordion][accordion title=&quot;Accordion#1&quot;] Lorem ipsum dolor sit amet, consectetur adipiscing elit tortor libero sodales leo, eget blandit nunc tortor eu nibh. Aenean nisl orci lorem, [/accordion] [/accordionwrap]
+                    </pre>
+
+                    <div class="page-header"><h3>Tabs shortcode:</h3></div>
+                    <pre class="prettyprint html">
+[tabgroup] [tab title=&quot;Tab 1&quot;] Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.[/tab] [tab title=&quot;Tab 2&quot;] Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit.[/tab] [tab title=&quot;Tab 3&quot;] Lorem ipsum pharetra felis. Aliquam egestas consectetur elementum class aptent taciti sociosqu ad litora torquent perea conubia nostra lorem inceptos orem ipsum dolor sit amet, consectetur adipiscing elit. [/tab] [/tabgroup]
+                    </pre>
+
+                  
+                                      <div class="page-header"><h3>Box shortcode:</h3></div>
+                    <div class="row">
+                        <div class="span6">
+                            <pre class="prettyprint html">
+[box type=error] Error! Please fill in all the fields required. [/box]
+                            </pre>
+                        </div>
+                        <div class="span6">
+                            <strong>Options</strong>
+                            <ul>
+                                <li><strong>type</strong> "error", "notice", "warning", "success"</li>
+                            </ul>
+                        </div>
+                     </div>
+
+                    
+
+                    
+
+
+                        <div class="page-header"><h2 id="widgets">Widgets</h2></div>
+                        <div class="row">
+                            <div class="span12">
+                                <ul>
+                                    <li>
+                                        <strong>WorkScout Tabbed Widget</strong><br>
+                                        Shows recent, popular and 
+                                    </li>
+
+                                </ul>
+                            </div>
+                       </div>
+
+
+
+                        <section id="theme_options">
+                            <div class="page-header"><h3>Theme Options</h3></div>
+                            <p>Options panel is based on <a href="http://wordpress.org/extend/plugins/option-tree/">OptionsTree plugin</a> and additional visual settings are available in Appearance-> Customize</p>
+
+                            
+
+
+                            <h5>Sidebars</h5>
+                            <p>All sidebars that you create here will appear both in the Appearance > Widgets, and then you can choose them for specific pages or posts. Please choose a unique title for each sidebar and make it one word.</p>
+                        </section>
+
+                        <section id="theme_customizer">
+                            <div class="page-header"><h3>Theme Customizer</h3></div>
+                            <p>WorkScout is using new feature of latest WordPress - Theme Customizer, you'll get there by clicking Appearance - Customize  </p>
+                            <p>It gives you real time preview of changes you made to your site.</p>
+                        </section>
+
+
+
+                           
+
+<section id="translation_and_customization">
+    <div class="page-header"><h3>Translation</h3></div>
+
+        <p>WorkScout theme is translation ready. I assume your WordPress is already in your language. If not:</p>
+        <ol>
+            <li>Go to: <strong>Dashboard &gt; Settings &gt; General a</strong>nd change the Site language.</li>
+            <li>Open <em>wp-config.php</em> and modify the line below, or add it if it is missing.</li>
+        </ol>
+        <p>For German language it will be:</p>
+
+        <pre> define ('WPLANG', 'de_DE'); </pre>
+
+        <p>There are three ways to translate it to your language:</p>
+        <h3>Method 1 - using <a href="https://wordpress.org/plugins/loco-translate/" target="_blank">Loco Translate</a></h3>
+        <p>Install plugin <a href="https://wordpress.org/plugins/loco-translate/" target="_blank">Loco Translate</a>. After successful installation go to Loco Translate -&gt; Manage Localization, you should see this screen:</p>
+
+        <img class="alignnone wp-image-9 size-full" src="http://kb.purethe.me/files/2013/11/ld46PT7.png" alt="Codestyling localization" width="786" height="197" />
+
+        <p>Click <strong>New language, </strong>select your language and click<strong> Start Translating.</strong></p>
+
+        <p>Now you should see that screen where you can translate each string that is used in theme:</p>
+
+        <img class="alignnone size-full wp-image-25" src="http://kb.purethe.me/files/2013/11/VFCtaJT.png" alt="VFCtaJT" width="1166" height="715" />
+
+        <p>When you're done, click Save, and you can also click both "Po" and "Mo" buttons to save them on your PC as a backup.</p>
+        <h3>Method 2 - using Codestyling Localization</h3>
+        <p>Install plugin <a href="http://www.code-styling.de/english/development/wordpress-plugin-codestyling-localization-en" target="_blank">Codestyling Localization</a>. After successful installation go to Tools -&gt; Localization, you should see this screen:</p>
+
+        <img class="alignnone wp-image-9 size-full" src="http://kb.purethe.me/files/2013/11/LKwbIAF.png" alt="Codestyling localization" width="786" height="197" />
+
+        <p>Click <strong>Themes</strong> (if you'll see any timeout errors etc., click the '<strong>enable low memory code</strong>' checkbox) and find workscout on the list:</p>
+
+        <a href="http://kb.purethe.me/files/2013/11/urEi8az.png"><img class="size-full wp-image-10" src="http://kb.purethe.me/files/2013/11/urEi8az.png" alt="Here we already have English and Polish version" width="915" height="170" /></a> Here we already have English and Polish version
+
+        <p>Now we can add new languages, let's add German. Click <strong>Add New Language</strong>, in the popup find '<strong>de_DE</strong>' and click "<strong>create po-file</strong>'.</p>
+
+        <p>German language should appear on the list.<a href="http://kb.purethe.me/files/2013/11/MTHLs5B.png"><img class="size-full wp-image-11 aligncenter" src="http://kb.purethe.me/files/2013/11/MTHLs5B.png" alt="MTHLs5B" width="508" height="192" /></a></p>
+
+        <p>Click Rescan button and than 'Scan now' in new popup. After that you can click Edit on the list.</p>
+
+        <p>This how it should look now:</p>
+
+        <a href="http://kb.purethe.me/files/2013/11/J1nQDpX.png"><img class="aligncenter size-full wp-image-12" src="http://kb.purethe.me/files/2013/11/J1nQDpX.png" alt="J1nQDpX" width="912" height="429" /></a>
+
+        <p>You can translate here every string that comes in the theme, and after you do it click<strong> Generate mo-file</strong></p>
+
+        <p>There's a notice message on the top:
+        <blockquote><strong>Warning</strong>: The actual loaded translation content contains mixed textdomains and is not pure translateable within one textdomain.
+        It seems, that there is code contained extracted out of other plugins, themes or widgets and used by copy &amp; paste inside some source files.
+        The affected unknown textdomains are: woocommerce, option-tree</blockquote>
+        All strings that are from WooCommerce textdomain will be translated automatically if your WooCommerce is in the same language as you set (so German in this example). Read more about WC localization - <a href="http://docs.woothemes.com/document/woocommerce-localization/">Translating WooCommerce</a>
+        </p>
+        &nbsp;
+        <h3>Method 3- using PoEdit</h3>
+        <p>Download <a href="http://poedit.net/">PoEdit</a> and run it.</p>
+
+        <a href="http://kb.purethe.me/files/2013/11/Zrzut-ekranu-2014-10-25-00.42.09.png"><img class="aligncenter size-full wp-image-13" src="http://kb.purethe.me/files/2013/11/Zrzut-ekranu-2014-10-25-00.42.09.png" alt="Zrzut ekranu 2014-10-25 00.42.09" width="826" height="694" /></a>
+
+        <p>Click '<strong>Create new translation</strong>', navigate to <strong>workscout/languages, </strong> and select en_US.po (you might need to switch filter on the browser from *.pot to *.po). Select your language"</p>
+
+        <a href="http://kb.purethe.me/files/2013/11/Zrzut-ekranu-2014-10-25-00.46.33.png"><img class="aligncenter size-full wp-image-14" src="http://kb.purethe.me/files/2013/11/Zrzut-ekranu-2014-10-25-00.46.33.png" alt="Zrzut ekranu 2014-10-25 00.46.33" width="326" height="113" /></a>
+
+        &nbsp;
+
+        <p>now you can translate one by one each string from the theme, after you finish (you don't need to translate everything, save the file as for example fr_FR.po, not fr.po like PoEdit suggest. That should generate two .po and .mo file.</p>
+
+        &nbsp;
+        <h3 id="section-7">Making your Localization upgrade safe</h3>
+        <p>Keep a backup of your translation in safe place, as WordPress might remove files during auto-updates, and you probably wouldn't want to lose it :)</p>
+        </section>
+
+                
+
+           <hr />
+
+           <div class="goodbye">
+            <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+        </div>
+
+        <hr />
+
+        <footer>
+            <p>&copy; Purethemes 2012</p>
+        </footer>
+
+    </div>
+    <!-- ========================= MAIN CONTAINER >> END ========================= -->
+
+
+                                <!-- CHANGELOG >> START -->
+        <div class="modal hide fade" id="changelog" tabindex="-1" role="dialog" aria-labelledby="changelog-label" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 id="changelog-label">Changelog</h3>
+            </div>
+            <div class="modal-body">
+
+                                        <!-- Code Block >> Start -->
+
+
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    </div>
+</div>
+<!-- CHANGELOG >> END -->
+
+
+
+<!-- CREDITS >> START -->
+<div class="modal hide fade" id="credits" tabindex="-1" role="dialog" aria-labelledby="credits-label" aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="credits-label">Credits</h3>
+    </div>
+    <div class="modal-body">
+
+</div>
+<div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+</div>
+</div>
+<!-- CREDITS >> END -->
+
+<!-- loading javascripts -->
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+<!-- init javascripts -->
+<script src="assets/js/init.js"></script>
+
+</body>
+
+</html>
